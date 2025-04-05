@@ -1,0 +1,74 @@
+/* Fuente general */
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #e2b53b;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Enlaces de navegación */
+  .navbar .nav-link {
+    color: white !important;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover,
+  .navbar .nav-link.active {
+    color: #ffc107 !important;
+  }
+  
+  /* Sección de inicio */
+  #inicio h1 {
+    color: rgb(255, 255, 255);
+  }
+  
+  #inicio p {
+    color: #ffffff;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    #inicio .row {
+      flex-direction: column;
+    }
+  
+    #inicio .col-md-6 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  /* Logo redondo y ajustado */
+.logo-img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ffc107;
+  }
+  
+  /* Asegura que el navbar se alinee bien en pantallas grandes */
+  .navbar .container {
+    justify-content: space-between;
+  }
+
+  p {
+      
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  .logo-central {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #ffc107; /* Borde amarillo opcional */
+    margin: auto;
+}
+
+  

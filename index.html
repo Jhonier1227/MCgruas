@@ -1,53 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M&C Grúas - Inicio</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M&C Grúas</title>
+
+  <!-- Tipografía Oswald desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/script.js"></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/images/logo.png" alt="M&C Grúas">
+
+  <!-- Barra de navegación fija -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+    <div class="container">
+      <!-- Logo alineado a la izquierda -->
+
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="assets/img/LogoGruas.jpeg" alt="Logo" class="logo-img" />
+        <span class="text-warning fs-3">M&C Grúas</span>
+    </a>
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item"><a class="nav-link text-white fs-5" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white fs-5" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link text-white fs-5" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link text-white fs-5" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link text-white fs-5" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Inicio -->
+<section id="inicio" class="section hero d-flex align-items-center mt-5 pt-5" style="min-height: 100vh;">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Imagen a la izquierda -->
+        <div class="col-md-6 text-center">
+          <img src="assets/img/principalGrua.jpg" alt="Grúa" class="img-fluid rounded shadow">
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Nosotros</a></li>
-                <li><a href="services.html">Servicios</a></li>
-                <li><a href="gallery.html">Galería</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="hero">
-        <h1>Servicio de Grúas 24/7</h1>
-        <p>Rápido, seguro y confiable.</p>
-        <a href="contact.html" class="btn">Contáctanos</a>
-    </section>
-    
-    <section class="services">
-        <h2>Nuestros Servicios</h2>
-        <div class="service-list">
-            <div class="service">
-                <h3>Remolque de Vehículos</h3>
-                <p>Transportamos tu vehículo de manera segura.</p>
-            </div>
-            <div class="service">
-                <h3>Auxilio Mecánico</h3>
-                <p>Asistencia rápida en carretera.</p>
-            </div>
-            <div class="service">
-                <h3>Traslado de Maquinaria</h3>
-                <p>Movemos maquinaria pesada con seguridad.</p>
-            </div>
+        <!-- Texto a la derecha -->
+        <div class="col-md-6 text-center text-md-start mt-4 mt-md-0">
+          <h1 class="display-4 fw-bold">M&C GRÚAS</h1>
+          <p class="fs-4">Seguridad, rapidez y confianza</p>
+          
+          <!-- Botones alineados horizontalmente -->
+          <div class="d-flex gap-3 justify-content-center justify-content-md-start mt-3">
+            <a href="tel:+571234567890" class="btn btn-warning btn-lg">Llamar ahora</a>
+            <a href="https://wa.me/573170525370" target="_blank" class="btn btn-success btn-lg">WhatsApp</a>
+          </div>
+          
         </div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 M&C Grúas - Todos los derechos reservados.</p>
-    </footer>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final de Seccion de Inicio -->
+  
+
+
+
+  <!-- Aquí seguirían las demás secciones... -->
+
+  <!-- Seccion de Servicios -->
+  <section id="servicios" class="section container my-5">
+    <div class="row align-items-center">
+      <!-- Texto a la izquierda -->
+      <div class="col-md-6">
+        <h2 class="text-black mb-3 text-center">Nuestros Servicios</h2>
+        <p class="text-center mb-3 text-black">
+          En [Nombre de la Empresa], nos enorgullece ser una empresa especializada en servicios de grúa y transporte, comprometida con brindar soluciones eficientes y seguras para todo tipo de necesidades de movilización. 
+          Atendemos desde el traslado de vehículos varados, hasta el transporte de cargas especiales y objetos que requieren manejo profesional.<br>
+          Nuestro compromiso con la calidad del servicio, la puntualidad y la atención personalizada nos ha permitido consolidarnos como una referencia confiable en el sector. 
+          Contamos con un equipo de operadores altamente capacitados y una flota de grúas moderna y bien equipada, lista para responder ante cualquier eventualidad, las 24 horas del día.<br><br>
+          Ya sea que necesites asistencia en carretera, remolque de vehículos livianos o pesados, o apoyo en el movimiento de maquinaria y otros elementos,
+          en [Nombre de la Empresa] encontrarás un aliado dispuesto a brindarte el respaldo que mereces.<br><br>
+          Trabajamos con responsabilidad, compromiso y enfoque en la seguridad, para garantizar que cada servicio se realice con la máxima eficiencia y cuidado.
+          Nuestra prioridad es que tu carga llegue a su destino sin contratiempos.
+          Confía en nosotros para resolver tus necesidades de transporte y grúa con la profesionalidad que nos caracteriza.
+        </p>
+      </div>
+  
+      <!-- Imagen a la derecha con margen izquierdo -->
+      <div class="col-md-5 text-center ms-md-4">
+        <img src="assets/img/principalGrua.jpg" alt="Servicio de grúa" class="img-fluid rounded shadow" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Final de Seccion de Servicios -->
+
+  <!-- Seccion de Nosotros -->
+
+ <!-- Sección Nosotros -->
+<section id="nosotros" class="section container my-5">
+    <h1 class="text-center mb-5 text-black">Sobre nosotros</h1>
+    <div class="row align-items-center text-center text-md-start">
+      
+      <!-- Nuestra Historia -->
+      <div class="col-md-5 mb-4 mb-md-0">
+        <h2 class="text-black">Nuestra Historia</h2>
+        <p class="text-black">
+          M&C Grúas nació con el compromiso de brindar un servicio de transporte seguro y eficiente. 
+          Desde nuestros inicios, nos hemos enfocado en responder a las emergencias viales con responsabilidad y rapidez, ganándonos la confianza de nuestros clientes a lo largo de los años.<br><br>
+          Comenzamos con una pequeña flota, pero gracias a nuestra dedicación y enfoque en la calidad, hoy contamos con equipos modernos y personal capacitado que garantiza una atención inmediata y profesional en todo momento.<br><br>
+          A través del tiempo, hemos fortalecido nuestros valores de responsabilidad, compromiso y servicio al cliente, logrando posicionarnos como una empresa sólida y confiable dentro del sector de grúas y transporte especializado.
+        </p>
+      </div>
+  
+      <!-- Logo en el centro -->
+      <div class="col-md-2 text-center mb-4 mb-md-0">
+        <img src="assets/img/LogoGruas.jpeg" alt="Logo M&C Grúas" class="logo-central img-fluid rounded-circle shadow">
+      </div>
+  
+      <!-- Misión de la Empresa -->
+      <div class="col-md-5">
+        <h2 class="text-black">Misión de la Empresa</h2>
+        <p class="text-black">
+          Nuestra misión es ofrecer soluciones de remolque y transporte con profesionalismo, puntualidad y un enfoque en la seguridad del cliente y su vehículo.<br><br>
+          Nos comprometemos a estar disponibles en todo momento, con una atención rápida y confiable que responda de manera efectiva a cualquier emergencia o necesidad de traslado.<br><br>
+          Creemos en el trabajo bien hecho, el respeto por nuestros clientes y el cuidado por cada detalle del servicio. Nuestra meta es ser reconocidos no solo por la calidad de lo que hacemos, sino también por el trato humano y la tranquilidad que brindamos a quienes confían en nosotros.
+        </p>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+  
+  
+
+  <footer class="bg-black text-white text-center p-3">
+    <p>© 2025 M&C Grúas - Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
