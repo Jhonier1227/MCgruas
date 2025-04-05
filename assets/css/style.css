@@ -71,4 +71,15 @@ body {
     margin: auto;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Ajusta según la altura de tu navbar */
+  }
+
+  .carrusel-img {
+    max-height: 250px; /* puedes ajustar esta altura a tu gusto */
+    max-width: 600px;
+    object-fit: cover;
+  }
+  
   
