@@ -1,4 +1,5 @@
 // Seleccionar todos los enlaces del navbar que apuntan a secciones con ID (empiezan con #)
+/*
 document.querySelectorAll('.navbar-nav a[href^="#"]').forEach(link => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
@@ -21,4 +22,4 @@ document.querySelectorAll('.navbar-nav a[href^="#"]').forEach(link => {
       }
     });
   });
-  
+*/

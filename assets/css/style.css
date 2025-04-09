@@ -82,4 +82,58 @@ html {
     object-fit: cover;
   }
   
+  .card i {
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover i {
+    transform: scale(1.2);
+  }
+  
+  .card p {
+    color: #444;
+  }
+  
+  .img-galeria {
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 1.5rem;
+    opacity: 0.9;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-color: #ffc107;
+  }
+  
+  #nosotros h3 {
+    font-size: 1.8rem;
+  }
+  
+  #nosotros p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .logo-footer {
+    width: 110px;
+    height: 110px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo-footer img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+  
   
