@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Metadatos básicos -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>M&C Grúas</title>
@@ -8,12 +9,9 @@
   <meta name="keywords" content="grúas, transporte, servicios de grúa, asistencia en carretera" />
   <meta name="author" content="M&C Grúas" />
   <link rel="icon" href="assets/img/LogoGrua1.png" type="image/x-icon" />
-  
 
-
-  <!-- Tipografía Oswald desde Google Fonts -->
+  <!-- Fuentes y estilos -->
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -23,16 +21,18 @@
   <!-- Barra de navegación fija -->
   <header class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
     <div class="container">
-      <!-- Logo alineado a la izquierda -->
-
+      <!-- Logo y nombre de la empresa -->
       <a class="navbar-brand d-flex align-items-center gap-2" href="#">
         <img src="assets/img/LogoGrua1.png" alt="Logo" class="logo-img" />
         <span class="text-warning fs-3">M&C Grúas</span>
-    </a>
-    
+      </a>
+      
+      <!-- Botón para menú colapsable en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- Menú de navegación -->
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav text-center">
           <li class="nav-item"><a class="nav-link text-white fs-5" href="#inicio">Inicio</a></li>
@@ -46,144 +46,160 @@
   </header>
 
   <!-- Sección Inicio -->
-<section id="inicio" class="d-flex align-items-center text-white" style="min-height: 100vh; background: linear-gradient(to right, #000000cc, #000000cc), url('assets/img/GruaFondo.jpeg') center/cover no-repeat;">
-  <div class="container py-5">
-    <div class="row align-items-center">
-      <!-- Texto a la izquierda -->
-      <div class="col-md-6 text-center text-md-start">
-        <h1 class="display-3 fw-bold mb-3 text-warning">M&C GRÚAS</h1>
-        <p class="lead fs-4">Seguridad, rapidez y confianza al alcance de una llamada</p>
+  <section id="inicio" class="d-flex align-items-center text-white" style="min-height: 100vh; background: linear-gradient(to right, #000000cc, #000000cc), url('assets/img/GruaFondo.jpeg') center/cover no-repeat;">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <!-- Texto principal -->
+        <div class="col-md-6 text-center text-md-start">
+          <h1 class="display-3 fw-bold mb-3 text-warning">M&C GRÚAS</h1>
+          <p class="lead fs-4">Seguridad, rapidez y confianza al alcance de una llamada</p>
+          
+          <!-- Botones de acción -->
+          <div class="d-flex gap-3 justify-content-center justify-content-md-start mt-4">
+            <a href="tel:+573177137402" class="btn btn-warning btn-lg d-flex align-items-center gap-2">
+              <i class="bi bi-telephone-fill"></i> Llamar ahora
+            </a>
+            <a href="https://wa.me/573166493568" target="_blank" class="btn btn-success btn-lg d-flex align-items-center gap-2">
+              <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Imagen decorativa -->
+        <div class="col-md-6 text-center mt-4 mt-md-0 d-none d-md-block">
+          <img src="assets/img/LogoGruas.jpeg" alt="Logo Grua" class="img-fluid rounded-circle shadow" style="max-width: 300px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Servicios -->
+  <section id="servicios" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 text-black display-5 fw-bold">Nuestros Servicios</h2>
+
+      <div class="row g-4">
+        <!-- Servicio 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow text-center p-4 border-0">
+            <div class="mb-3">
+              <i class="bi bi-truck text-warning" style="font-size: 3rem;"></i>
+            </div>
+            <h5 class="fw-bold">Asistencia 24/7</h5>
+            <p>Ofrecemos servicio de grúa disponible todos los días, a cualquier hora del día o la noche.</p>
+          </div>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow text-center p-4 border-0">
+            <div class="mb-3">
+              <i class="bi bi-gear-fill text-warning" style="font-size: 3rem;"></i>
+            </div>
+            <h5 class="fw-bold">Remolque de Vehículos</h5>
+            <p>Traslado seguro de vehículos livianos, pesados o con fallas mecánicas.</p>
+          </div>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow text-center p-4 border-0">
+            <div class="mb-3">
+              <i class="bi bi-box-seam text-warning" style="font-size: 3rem;"></i>
+            </div>
+            <h5 class="fw-bold">Transporte de Cargas</h5>
+            <p>Movilizamos maquinaria y cargas especiales con grúas modernas y personal capacitado.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nota adicional -->
+      <div class="text-center mt-5">
+        <p class="text-muted">
+          Contamos con una flota moderna y un equipo humano dispuesto a ofrecerte seguridad, compromiso y eficiencia en cada traslado.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Nosotros -->
+  <section id="nosotros" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center text-black mb-5 display-5 fw-bold">Sobre Nosotros</h2>
+      <div class="row align-items-center justify-content-center">
         
-        <!-- Botones -->
-        <div class="d-flex gap-3 justify-content-center justify-content-md-start mt-4">
-          <a href="tel:+573170525370" class="btn btn-warning btn-lg d-flex align-items-center gap-2">
-            <i class="bi bi-telephone-fill"></i> Llamar ahora
-          </a>
-          <a href="https://wa.me/573170525370" target="_blank" class="btn btn-success btn-lg d-flex align-items-center gap-2">
-            <i class="bi bi-whatsapp"></i> WhatsApp
-          </a>
+        <!-- Historia -->
+        <div class="col-md-5 text-center text-md-start mb-4 mb-md-0">
+          <h3 class="text-warning fw-bold mb-3">Nuestra Historia</h3>
+          <p class="text-dark">
+            M&C Grúas nació con el compromiso de brindar un servicio de transporte seguro y eficiente.
+            Desde nuestros inicios, nos hemos enfocado en responder a las emergencias viales con responsabilidad y rapidez,
+            ganándonos la confianza de nuestros clientes a lo largo de los años.
+          </p>
         </div>
-      </div>
 
-      <!-- Imagen a la derecha (opcional si ya está en fondo) -->
-      <div class="col-md-6 text-center mt-4 mt-md-0 d-none d-md-block">
-        <img src="assets/img/LogoGruas.jpeg" alt="Logo Grua" class="img-fluid rounded-circle shadow" style="max-width: 300px;">
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Final de Seccion de Inicio -->
-
-  <!-- Aquí seguirían las demás secciones... -->
-<!-- Sección Servicios -->
-<section id="servicios" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-5 text-black display-5 fw-bold">Nuestros Servicios</h2>
-
-    <div class="row g-4">
-      <!-- Servicio 1 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow text-center p-4 border-0">
-          <div class="mb-3">
-            <i class="bi bi-truck text-warning" style="font-size: 3rem;"></i>
-          </div>
-          <h5 class="fw-bold">Asistencia 24/7</h5>
-          <p>Ofrecemos servicio de grúa disponible todos los días, a cualquier hora del día o la noche.</p>
+        <!-- Logo decorativo -->
+        <div class="col-md-2 text-center mb-4 mb-md-0">
+          <img src="assets/img/LogoGruas.jpeg" alt="Logo M&C Grúas" class="img-fluid rounded-circle shadow" style="width: 160px; height: 160px; object-fit: cover;">
         </div>
-      </div>
 
-      <!-- Servicio 2 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow text-center p-4 border-0">
-          <div class="mb-3">
-            <i class="bi bi-gear-fill text-warning" style="font-size: 3rem;"></i>
-          </div>
-          <h5 class="fw-bold">Remolque de Vehículos</h5>
-          <p>Traslado seguro de vehículos livianos, pesados o con fallas mecánicas.</p>
-        </div>
-      </div>
-
-      <!-- Servicio 3 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow text-center p-4 border-0">
-          <div class="mb-3">
-            <i class="bi bi-box-seam text-warning" style="font-size: 3rem;"></i>
-          </div>
-          <h5 class="fw-bold">Transporte de Cargas</h5>
-          <p>Movilizamos maquinaria y cargas especiales con grúas modernas y personal capacitado.</p>
+        <!-- Misión -->
+        <div class="col-md-5 text-center text-md-start">
+          <h3 class="text-warning fw-bold mb-3">Nuestra Misión</h3>
+          <p class="text-dark">
+            Nuestra misión es ofrecer soluciones de remolque y transporte con profesionalismo, puntualidad y un enfoque en la seguridad del cliente y su vehículo.
+          </p>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="text-center mt-5">
-      <p class="text-muted">
-        Contamos con una flota moderna y un equipo humano dispuesto a ofrecerte seguridad, compromiso y eficiencia en cada traslado.
-      </p>
-    </div>
-  </div>
-</section>
-
-
-<br><br><br>
-  <!-- Seccion de Nosotros -->
-<!-- Sección Nosotros -->
-<section id="nosotros" class="py-5 bg-white">
-  <div class="container">
-    <h2 class="text-center text-black mb-5 display-5 fw-bold">Sobre Nosotros</h2>
-    <div class="row align-items-center justify-content-center">
-      
-      <!-- Historia -->
-      <div class="col-md-5 text-center text-md-start mb-4 mb-md-0">
-        <h3 class="text-warning fw-bold mb-3">Nuestra Historia</h3>
-        <p class="text-dark">
-          M&C Grúas nació con el compromiso de brindar un servicio de transporte seguro y eficiente.
-          Desde nuestros inicios, nos hemos enfocado en responder a las emergencias viales con responsabilidad y rapidez,
-          ganándonos la confianza de nuestros clientes a lo largo de los años.<br><br>
-          Comenzamos con una pequeña flota, pero gracias a nuestra dedicación y enfoque en la calidad, hoy contamos con equipos modernos y personal capacitado
-          que garantiza una atención inmediata y profesional en todo momento.
-        </p>
-      </div>
-
-      <!-- Logo en el centro -->
-      <div class="col-md-2 text-center mb-4 mb-md-0">
-        <img src="assets/img/LogoGruas.jpeg" alt="Logo M&C Grúas" class="img-fluid rounded-circle shadow" style="width: 160px; height: 160px; object-fit: cover;">
-      </div>
-
-      <!-- Misión -->
-      <div class="col-md-5 text-center text-md-start">
-        <h3 class="text-warning fw-bold mb-3">Nuestra Misión</h3>
-        <p class="text-dark">
-          Nuestra misión es ofrecer soluciones de remolque y transporte con profesionalismo, puntualidad y un enfoque en la seguridad del cliente y su vehículo.<br><br>
-          Nos comprometemos a estar disponibles en todo momento, con una atención rápida y confiable ante cualquier emergencia.
-          Nuestro enfoque es garantizar la tranquilidad de nuestros clientes desde el momento en que nos contactan hasta que su vehículo está en destino.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- fin de Seccion Nosotros -->
-
-  <!-- Inicio de Seccion de galeria -->
-<!-- Sección Galería -->
+  <!-- Sección Galería -->
 <section id="galeria" class="py-5 bg-light">
   <div class="container">
     <h2 class="text-center mb-5 text-black display-5 fw-bold">Galería</h2>
 
-    <div id="carruselGaleria" class="carousel slide" data-bs-ride="carousel">
-      <!-- Carrusel inner -->
+    <div id="carruselGaleria" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-wrap="true">
       <div class="carousel-inner rounded shadow-lg overflow-hidden" style="max-height: 500px;">
+        <!-- Las 19 imágenes del carrusel -->
         <div class="carousel-item active">
-          <img src="assets/img/camion1.jpeg" class="d-block w-100 img-galeria" alt="Servicio 1">
+          <img src="assets/ImgGruas/Grua (1).jpeg" class="d-block w-100 img-galeria" alt="Servicio 1">
         </div>
-        <div class="carousel-item">
-          <img src="assets/img/original-camion2.webp" class="d-block w-100 img-galeria" alt="Servicio 2">
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/camion3.jpg" class="d-block w-100 img-galeria" alt="Servicio 3">
-        </div>
+        <!-- Las demás imágenes -->
+        <!-- Puedes duplicar esta línea y cambiar el número de la imagen -->
+        <!-- O usar este bloque para las demás -->
+        <!-- Aquí generamos automáticamente hasta la 19 -->
+        <!-- Siguiente bloque generado a mano -->
+       <div class="carousel-item"><img src="assets/ImgGruas/Grua (1).jpeg" class="d-block w-100 img-galeria" alt="Servicio 1"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (2).jpeg" class="d-block w-100 img-galeria" alt="Servicio 2"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (3).jpeg" class="d-block w-100 img-galeria" alt="Servicio 3"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (4).jpeg" class="d-block w-100 img-galeria" alt="Servicio 4"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (5).jpeg" class="d-block w-100 img-galeria" alt="Servicio 5"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (6).jpeg" class="d-block w-100 img-galeria" alt="Servicio 6"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (7).jpeg" class="d-block w-100 img-galeria" alt="Servicio 7"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (8).jpeg" class="d-block w-100 img-galeria" alt="Servicio 8"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (9).jpeg" class="d-block w-100 img-galeria" alt="Servicio 9"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (10).jpeg" class="d-block w-100 img-galeria" alt="Servicio 10"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (11).jpeg" class="d-block w-100 img-galeria" alt="Servicio 11"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (12).jpeg" class="d-block w-100 img-galeria" alt="Servicio 12"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (13).jpeg" class="d-block w-100 img-galeria" alt="Servicio 13"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (14).jpeg" class="d-block w-100 img-galeria" alt="Servicio 14"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (15).jpeg" class="d-block w-100 img-galeria" alt="Servicio 15"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (16).jpeg" class="d-block w-100 img-galeria" alt="Servicio 16"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (17).jpeg" class="d-block w-100 img-galeria" alt="Servicio 17"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (18).jpeg" class="d-block w-100 img-galeria" alt="Servicio 18"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (19).jpeg" class="d-block w-100 img-galeria" alt="Servicio 19"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (20).jpeg" class="d-block w-100 img-galeria" alt="Servicio 20"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (22).jpeg" class="d-block w-100 img-galeria" alt="Servicio 22"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (23).jpeg" class="d-block w-100 img-galeria" alt="Servicio 23"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (24).jpeg" class="d-block w-100 img-galeria" alt="Servicio 24"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (25).jpeg" class="d-block w-100 img-galeria" alt="Servicio 25"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (26).jpeg" class="d-block w-100 img-galeria" alt="Servicio 26"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (27).jpeg" class="d-block w-100 img-galeria" alt="Servicio 27"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (28).jpeg" class="d-block w-100 img-galeria" alt="Servicio 28"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (29).jpeg" class="d-block w-100 img-galeria" alt="Servicio 29"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (30).jpeg" class="d-block w-100 img-galeria" alt="Servicio 30"></div>
+        <div class="carousel-item"><img src="assets/ImgGruas/Grua (31).jpeg" class="d-block w-100 img-galeria" alt="Servicio 31"></div>
       </div>
 
       <!-- Controles -->
@@ -198,6 +214,7 @@
     </div>
   </div>
 </section>
+
 
   <!-- Sección Contacto -->
 <!-- Sección Contacto -->
@@ -236,9 +253,18 @@
       <div class="col-md-6 d-flex align-items-center justify-content-center">
         <div class="bg-black text-white p-4 rounded-4 shadow text-center" style="width: 100%; max-width: 350px;">
           <h4 class="fw-bold mb-3 text-warning">M&C Grúas</h4>
-          <p class="mb-2"><i class="bi bi-telephone-fill me-2 text-warning"></i>312 345 6789</p>
-          <p class="mb-2"><i class="bi bi-envelope-fill me-2 text-warning"></i>contacto@mycgruas.com</p>
-          <p class="mb-2"><i class="bi bi-geo-alt-fill me-2 text-warning"></i>Calle 123 #45-67</p>
+          <p class="mb-2">
+            <i class="bi bi-telephone-fill me-2 text-warning"></i>
+            <a href="tel:+573123456789" class="text-white text-decoration-none">312 345 6789</a>
+          </p>
+          <p class="mb-2">
+            <i class="bi bi-telephone-fill me-2 text-warning"></i>
+            <a href="tel:+573166493568" class="text-white text-decoration-none">316 649 3568</a>
+          </p>
+          <p class="mb-2">
+            <i class="bi bi-envelope-fill me-2 text-warning"></i>
+            <a href="mailto:mcgruas.63@hotmail.com" class="text-white text-decoration-none">mcgruas.63@hotmail.com</a>
+          </p>
           <p class="mt-4 fw-semibold">Horario de atención</p>
           <h3 class="text-warning fw-bold" style="font-size: 2.2rem;">24 HORAS</h3>
         </div>
@@ -286,8 +312,16 @@
           <a href="https://facebook.com" target="_blank" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
           <a href="https://instagram.com" target="_blank" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
         </div>
-        <p class="mb-0"><i class="bi bi-envelope me-2"></i>contacto@mycgruas.com</p>
-        <p><i class="bi bi-telephone me-2"></i>+57 312 345 6789</p>
+        <p class="mb-0">
+          <i class="bi bi-envelope me-2 text-warning"></i>
+          <a href="mailto:mcgruas.63@hotmail.com" class="text-white text-decoration-none">mcgruas.63@hotmail.com</a>
+        </p>
+        
+        <!-- Teléfono con enlace funcional -->
+        <p>
+          <i class="bi bi-telephone me-2 text-warning"></i>
+          <a href="tel:+50765634418" class="text-white text-decoration-none">+507 6563-4418</a>
+        </p>
       </div>
 
     </div>
@@ -297,6 +331,11 @@
     <p class="text-center mb-0">&copy; 2025 M&C Grúas - Todos los derechos reservados.</p>
   </div>
 </footer>
-
+  
+    <!-- Fin del Footer -->
+  
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
