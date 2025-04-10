@@ -1,25 +1,27 @@
-// Seleccionar todos los enlaces del navbar que apuntan a secciones con ID (empiezan con #)
-/*
-document.querySelectorAll('.navbar-nav a[href^="#"]').forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-  
-      // Obtener el ID del destino, por ejemplo "#inicio", "#servicios", etc.
-      const targetId = this.getAttribute('href').substring(1);
-      const targetSection = document.getElementById(targetId);
-  
-      if (targetSection) {
-        // Ocultar todas las secciones
-        document.querySelectorAll('section').forEach(sec => {
-          sec.style.display = 'none';
-        });
-  
-        // Mostrar solo la sección clickeada
-        targetSection.style.display = 'block';
-  
-        // Hacer scroll suave hacia la sección
-        targetSection.scrollIntoView({ behavior: 'smooth' });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll('.nav-link');
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+  const navbarToggler = document.querySelector('.navbar-toggler');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // Verifica si el menú está visible (modo móvil)
+      if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
+        navbarToggler.click(); // Esto simula el click y cierra el menú
       }
     });
   });
-*/
+});
+
+
+// Bloquear clic derecho en toda la página
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+// Bloquear arrastrar imágenes
+document.querySelectorAll('img').forEach(img => {
+  img.setAttribute('draggable', 'false');
+  img.addEventListener('dragstart', e => e.preventDefault());
+});
