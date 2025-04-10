@@ -25,3 +25,34 @@ document.querySelectorAll('img').forEach(img => {
   img.setAttribute('draggable', 'false');
   img.addEventListener('dragstart', e => e.preventDefault());
 });
+
+// Bloquear selección de texto
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("formularioContacto");
+  const mensajeExito = document.getElementById("mensajeExito");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mrbprrvj", {
+        method: "POST",
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        form.reset();
+        mensajeExito.classList.remove("d-none");
+      } else {
+        alert("❌ Ocurrió un error al enviar el formulario.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("⚠️ Error al conectar con el servidor.");
+    }
+  });
+});
