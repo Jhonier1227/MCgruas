@@ -15,16 +15,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Bloquear clic derecho en toda la página
-document.addEventListener('contextmenu', function(e) {
-  e.preventDefault();
+// Bloquear clic derecho y arrastrar solo en imágenes del carrusel
+document.addEventListener('DOMContentLoaded', () => {
+  const carruselImgs = document.querySelectorAll('#carruselGaleria img');
+
+  carruselImgs.forEach(img => {
+    img.setAttribute('draggable', 'false');
+
+    img.addEventListener('contextmenu', e => e.preventDefault());
+    img.addEventListener('dragstart', e => e.preventDefault());
+  });
 });
 
-// Bloquear arrastrar imágenes
-document.querySelectorAll('img').forEach(img => {
-  img.setAttribute('draggable', 'false');
-  img.addEventListener('dragstart', e => e.preventDefault());
-});
 
 // Bloquear selección de texto
 
