@@ -1,7 +1,74 @@
+<p align="center">
+  <img src="./assets/img/LogoGrua1.png" alt="Logo M&C Grúas" width="100" />
+</p>
+
 # M&C Grúas - Página Web Oficial
 
-## Concepto del Proyecto
-M&C Grúas es una empresa dedicada al servicio de asistencia vehicular, especializada en el traslado seguro de automóviles y maquinaria. La página web proporcionará información detallada sobre los servicios ofrecidos, la empresa y los medios de contacto.
+### 🚧 Proyecto en Producción
 
-## Información del Proyecto
-Este proyecto tiene como objetivo desarrollar un sitio web moderno, intuitivo y adaptable a distintos dispositivos, asegurando una experiencia óptima para los usuarios. Se implementarán tecnologías como HTML, CSS y JavaScript para garantizar un diseño atractivo y funcional. La web contará con secciones clave como presentación de la empresa, listado de servicios, galería de trabajos realizados y un formulario de contacto para atención rápida a los clientes.
+---
+
+## 📌 Descripción General
+
+**M&C Grúas** es una empresa especializada en servicios de asistencia vehicular, enfocada en el remolque de automóviles, transporte de maquinaria y atención vial 24/7. Este sitio web fue desarrollado con el objetivo de mostrar los servicios de manera clara, profesional y accesible para todos los usuarios desde cualquier dispositivo.
+
+---
+
+## 🌐 Tecnologías Implementadas
+
+- HTML5  
+- CSS3 (con Bootstrap 5 para diseño responsivo)  
+- JavaScript  
+- Formspree (para recepción de formularios)  
+- GitHub Pages (para despliegue temporal del sitio)
+
+---
+
+## 🧩 Funcionalidades Incluidas
+
+- ✅ Diseño completamente **responsive** (PC, tablet, móvil)
+- ✅ Menú de navegación **fijo y funcional**
+- ✅ **Formulario de contacto funcional** con notificación de envío personalizado
+- ✅ **Carrusel de galería con 19 imágenes** optimizadas
+- ✅ Sección “Nosotros” con historia, misión y logo
+- ✅ Botones directos de **WhatsApp y llamada**
+- ✅ Seguridad básica en imágenes del carrusel:
+  - Bloqueo de clic derecho y arrastre
+- ✅ **Pantalla de carga animada**
+- ✅ Archivos CSS y JS **minificados**
+
+---
+
+## 📸 Estructura de la Página
+
+- **Inicio:** Presentación + acción rápida
+- **Servicios:** Detalle completo de lo ofrecido
+- **Nosotros:** Historia, misión y visión
+- **Galería:** Carrusel moderno de evidencias
+- **Contacto:** Formulario + datos directos
+- **Footer:** Redes, derechos y logo antiguo como sello
+
+---
+
+## 🧾 Hosting y Dominio
+
+🌐 Sitio actual:  
+📍 [https://jhonier1227.github.io/MCgruas/](https://jhonier1227.github.io/MCgruas/)
+
+➡️ Migración a Hostinger en camino para versión pública más profesional (mejor SEO y velocidad).
+
+---
+
+## 💼 Autor
+
+**Desarrollador:** [Jhonier Stiven Montaño Castillo](https://github.com/jhonier1227)  
+**Proyecto Profesional – SENA**
+
+---
+
+## 📥 Instalación Local
+
+```bash
+git clone https://github.com/jhonier1227/MCgruas.git
+cd MCgruas
+
