@@ -32,8 +32,6 @@
 - ✅ **Carrusel de galería con 19 imágenes** optimizadas
 - ✅ Sección “Nosotros” con historia, misión y logo
 - ✅ Botones directos de **WhatsApp y llamada**
-- ✅ Seguridad básica en imágenes del carrusel:
-  - Bloqueo de clic derecho y arrastre
 - ✅ **Pantalla de carga animada**
 - ✅ Archivos CSS y JS **minificados**
 
