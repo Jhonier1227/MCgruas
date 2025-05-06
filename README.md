@@ -60,7 +60,7 @@
 ## 💼 Autor
 
 **Desarrollador:** [Jhonier Stiven Montaño Castillo](https://github.com/jhonier1227)  
-**Proyecto Profesional – SENA**
+**Proyecto Profesional – PERSONAL**
 
 ---
 
