@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Experiencia del Cliente | M&C Grúas</title>
+  <meta
+    name="description"
+    content="Página de experiencia del cliente para opiniones aprobadas, satisfacción del servicio y sugerencias de mejora en M&C Grúas."
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mycgruas.com/experiencia.html" />
+  <link rel="icon" href="assets/img/LogoGrua1.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+  <header class="site-header fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="index.html#inicio" aria-label="Ir al inicio de M&C Grúas">
+          <img src="assets/img/LogoGrua1.png" alt="Logo M&C Grúas" class="logo-img" />
+          <span class="brand-copy">
+            <strong>M&C Grúas</strong>
+            <small>Servicio de grúas 24/7</small>
+          </span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Abrir navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-xl-center">
+            <li class="nav-item"><a class="nav-link" href="index.html#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#guia">Guía útil</a></li>
+            <li class="nav-item"><a class="nav-link" href="flota.html">Flota</a></li>
+            <li class="nav-item"><a class="nav-link" href="redes.html">Redes</a></li>
+            <li class="nav-item"><a class="nav-link" href="experiencia.html">Experiencia</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-tag">experiencia.html</span>
+        <h1>Opiniones, satisfacción del servicio y sugerencias de mejora</h1>
+        <p>
+          Esta página convierte la web en un punto de escucha activa. Aquí podrás recoger comentarios, publicar
+          opiniones aprobadas y revisar oportunidades reales para mejorar la atención del servicio.
+        </p>
+        <div class="page-kicker-row">
+          <span><i class="bi bi-chat-dots"></i> Opiniones aprobadas</span>
+          <span><i class="bi bi-stars"></i> Satisfacción del cliente</span>
+          <span><i class="bi bi-lightbulb"></i> Sugerencias de mejora</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="subpage-section">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7">
+            <div id="testimonialSummary"></div>
+          </div>
+          <div class="col-lg-5">
+            <div class="feedback-card h-100">
+              <span class="section-tag section-tag-dark">Publicación responsable</span>
+              <h2>Cómo funciona este apartado</h2>
+
+              <div class="feedback-note-list">
+                <article class="feedback-note">
+                  <strong>Comentarios internos</strong>
+                  <p>Todo lo que llegue por el formulario sirve para entender mejor la experiencia del cliente.</p>
+                </article>
+                <article class="feedback-note">
+                  <strong>Opiniones públicas</strong>
+                  <p>Solo se muestran en la página los testimonios que tú apruebes o que el cliente autorice publicar.</p>
+                </article>
+                <article class="feedback-note">
+                  <strong>Privacidad</strong>
+                  <p>La idea es mostrar solo nombre, empresa o ciudad, sin publicar datos sensibles del cliente.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subpage-section section-light-alt">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Opiniones publicadas</span>
+          <h2>Espacio listo para mostrar testimonios aprobados</h2>
+          <p>
+            Por ahora no inventamos opiniones. Cuando tengas comentarios reales, podrás agregarlos al archivo
+            <code>assets/data/testimonios.json</code> y aparecerán aquí automáticamente.
+          </p>
+        </div>
+
+        <div id="testimonialStatus" class="data-status d-none" role="status"></div>
+        <div id="testimonialGrid" class="testimonial-grid"></div>
+      </div>
+    </section>
+
+    <section class="subpage-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Encuesta de satisfacción</span>
+          <h2>Permite que el cliente califique el servicio y deje sugerencias de mejora</h2>
+          <p>
+            Este formulario queda listo para recibir opiniones. Puedes usarlo para medir calidad del servicio, detectar
+            fallas repetidas y construir más adelante un historial de testimonios reales.
+          </p>
+        </div>
+
+        <div class="feedback-grid">
+          <div class="feedback-card">
+            <span class="section-tag section-tag-dark">Qué conviene preguntar</span>
+            <div class="feedback-note-list">
+              <article class="feedback-note">
+                <strong>Calificación general</strong>
+                <p>Sirve para identificar si el cliente quedó satisfecho con la rapidez, el trato y la solución.</p>
+              </article>
+              <article class="feedback-note">
+                <strong>Comentario libre</strong>
+                <p>Ayuda a encontrar detalles que no aparecen en una calificación numérica.</p>
+              </article>
+              <article class="feedback-note">
+                <strong>Sugerencia de mejora</strong>
+                <p>Te permite detectar cambios prácticos que podrían fortalecer el servicio o la comunicación.</p>
+              </article>
+              <article class="feedback-note">
+                <strong>Autorización para publicar</strong>
+                <p>Si el cliente lo permite, luego puedes mover su opinión aprobada al JSON de testimonios.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="feedback-card">
+            <form
+              id="formularioExperiencia"
+              class="contact-form"
+              action="https://formspree.io/f/mrbprrvj"
+              method="POST"
+              data-async-form
+              data-message-target="mensajeExperiencia"
+              data-sending-text="Enviando opinión..."
+              data-success-message="Gracias por compartir tu experiencia. Tu opinión fue enviada correctamente."
+              data-error-message="No fue posible enviar tu opinión. Intenta nuevamente en unos minutos."
+            >
+              <input type="hidden" name="_subject" value="Nueva encuesta de satisfacción desde mycgruas.com" />
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="nombreCliente" class="form-label">Nombre</label>
+                  <input type="text" id="nombreCliente" name="nombre" class="form-control" required />
+                </div>
+                <div class="col-md-6">
+                  <label for="empresaCliente" class="form-label">Empresa</label>
+                  <input type="text" id="empresaCliente" name="empresa" class="form-control" placeholder="Opcional" />
+                </div>
+                <div class="col-md-6">
+                  <label for="ciudadCliente" class="form-label">Ciudad</label>
+                  <input type="text" id="ciudadCliente" name="ciudad" class="form-control" required />
+                </div>
+                <div class="col-md-6">
+                  <label for="servicioCliente" class="form-label">Servicio recibido</label>
+                  <input type="text" id="servicioCliente" name="servicio" class="form-control" placeholder="Grúa, traslado, maquinaria..." required />
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Calificación general</label>
+                  <div class="rating-option-grid" role="radiogroup" aria-label="Calificación general">
+                    <div>
+                      <input type="radio" name="calificacion" id="rating1" value="1" required />
+                      <label for="rating1"><i class="bi bi-star-fill"></i><span>1</span></label>
+                    </div>
+                    <div>
+                      <input type="radio" name="calificacion" id="rating2" value="2" required />
+                      <label for="rating2"><i class="bi bi-star-fill"></i><span>2</span></label>
+                    </div>
+                    <div>
+                      <input type="radio" name="calificacion" id="rating3" value="3" required />
+                      <label for="rating3"><i class="bi bi-star-fill"></i><span>3</span></label>
+                    </div>
+                    <div>
+                      <input type="radio" name="calificacion" id="rating4" value="4" required />
+                      <label for="rating4"><i class="bi bi-star-fill"></i><span>4</span></label>
+                    </div>
+                    <div>
+                      <input type="radio" name="calificacion" id="rating5" value="5" required />
+                      <label for="rating5"><i class="bi bi-star-fill"></i><span>5</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="comentarioCliente" class="form-label">¿Cómo fue tu experiencia?</label>
+                  <textarea id="comentarioCliente" name="comentario" class="form-control" rows="4" required></textarea>
+                </div>
+                <div class="col-12">
+                  <label for="sugerenciaCliente" class="form-label">Sugerencia de mejora</label>
+                  <textarea id="sugerenciaCliente" name="sugerencia" class="form-control" rows="3" placeholder="Opcional"></textarea>
+                </div>
+                <div class="col-12">
+                  <label for="correoCliente" class="form-label">Correo de contacto</label>
+                  <input type="email" id="correoCliente" name="correo" class="form-control" placeholder="Opcional, por si deseas que te respondan" />
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Sí" id="autorizaPublicacion" name="autoriza_publicacion" />
+                    <label class="form-check-label" for="autorizaPublicacion">
+                      Autorizo que mi nombre, empresa o ciudad puedan aparecer en una opinión publicada.
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Sí" id="aceptaEnvio" name="acepta_envio" required />
+                    <label class="form-check-label" for="aceptaEnvio">
+                      Confirmo que esta información puede ser usada para mejorar el servicio y gestionar mi opinión.
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <p class="privacy-note mt-3 mb-0">
+                La información sensible no se publica automáticamente. Esta página está pensada para moderar y aprobar
+                comentarios antes de hacerlos visibles.
+              </p>
+
+              <button type="submit" class="btn btn-warning btn-lg w-100 mt-4">Enviar opinión</button>
+              <div id="mensajeExperiencia" class="form-status d-none" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <img src="assets/img/LogoGrua1.png" alt="Logo M&C Grúas" class="footer-logo" />
+            <div>
+              <h2>M&C Grúas</h2>
+              <p>Servicio de grúas 24 horas en Cali con cobertura en toda Colombia.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <h3>Enlaces</h3>
+          <ul class="footer-links">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#servicios">Servicios</a></li>
+            <li><a href="index.html#guia">Guía útil</a></li>
+            <li><a href="flota.html">Flota</a></li>
+            <li><a href="redes.html">Redes</a></li>
+            <li><a href="experiencia.html">Experiencia</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <h3>Contacto rápido</h3>
+          <ul class="footer-contact">
+            <li><a href="tel:+573177137402">317 713 7402</a></li>
+            <li><a href="tel:+573166493568">316 649 3568</a></li>
+            <li><a href="mailto:gruamcgruas@gmail.com">gruamcgruas@gmail.com</a></li>
+            <li><a href="https://mycgruas.com/">mycgruas.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-current-year></span> M&C Grúas. Todos los derechos reservados.</p>
+        <p>Atención principal en Cali | Cobertura nacional en Colombia</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-cta" aria-label="Acciones rápidas">
+    <a href="tel:+573177137402" class="floating-call">
+      <i class="bi bi-telephone-fill"></i>
+      <span>Llamar</span>
+    </a>
+    <a
+      href="https://wa.me/573166493568?text=Hola%20M%26C%20Gr%C3%BAas,%20necesito%20una%20gr%C3%BAa."
+      class="floating-whatsapp"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="bi bi-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>

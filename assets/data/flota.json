@@ -1,0 +1,56 @@
+{
+  "empresa": {
+    "nombre": "M&C Grúas",
+    "nit": "Por actualizar con el NIT oficial",
+    "operacion": "Cali, Valle del Cauca",
+    "cobertura": "Toda Colombia",
+    "correo": "gruamcgruas@gmail.com",
+    "telefonos": [
+      "317 713 7402",
+      "316 649 3568"
+    ],
+    "descripcion": "La flota se presenta para generar confianza, mostrar capacidad operativa y dejar clara la información empresarial básica cuando el servicio es solicitado por personas o empresas."
+  },
+  "vehiculos": [
+    {
+      "nombre": "Plataforma para servicios urbanos",
+      "tipo": "Grúa planchón",
+      "imagen": "assets/img/GruaFondo.jpeg",
+      "alt": "Grúa de plataforma trasladando una camioneta",
+      "descripcion": "Unidad ideal para servicios urbanos, atención a vehículos averiados y traslados coordinados en Cali.",
+      "uso": "Carros, camionetas y remolques livianos",
+      "capacidad": "Operación para vehículos particulares y comerciales livianos",
+      "disponibilidad": "Cali y recorridos regionales"
+    },
+    {
+      "nombre": "Unidad para maquinaria liviana",
+      "tipo": "Transporte especializado",
+      "imagen": "assets/img/GruaFondo2.jpeg",
+      "alt": "Grúa transportando maquinaria agrícola",
+      "descripcion": "Preparada para traslados donde se requiere una plataforma estable y una coordinación más cuidadosa de la carga.",
+      "uso": "Maquinaria liviana, equipos y traslados especiales",
+      "capacidad": "Apoyo logístico para cargas con atención programada",
+      "disponibilidad": "Cali, Valle del Cauca y rutas definidas"
+    },
+    {
+      "nombre": "Atención en carretera",
+      "tipo": "Cobertura nacional",
+      "imagen": "assets/img/principalGrua.jpeg",
+      "alt": "Camiones de grúa listos para servicio en carretera",
+      "descripcion": "Pensada para respaldar servicios en corredores viales y solicitudes que requieren coordinación fuera de la ciudad.",
+      "uso": "Asistencia vial, traslados intermunicipales y nacionales",
+      "capacidad": "Respuesta para conductores, empresas y necesidades logísticas",
+      "disponibilidad": "Rutas regionales y nacionales"
+    },
+    {
+      "nombre": "Servicio de carga segura",
+      "tipo": "Operación técnica",
+      "imagen": "assets/ImgGruas/Grua (29).jpeg",
+      "alt": "Vehículo trasladado en una grúa de plataforma",
+      "descripcion": "Muestra de la operación y del tipo de servicio que puede publicarse para dar confianza a nuevos clientes.",
+      "uso": "Vehículos inmovilizados o traslados preventivos",
+      "capacidad": "Movilización segura según la novedad del cliente",
+      "disponibilidad": "Según agenda operativa y tipo de recorrido"
+    }
+  ]
+}

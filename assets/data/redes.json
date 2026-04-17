@@ -1,0 +1,60 @@
+{
+  "canales": [
+    {
+      "plataforma": "TikTok",
+      "handle": "@mycgruas",
+      "url": "https://www.tiktok.com/@mcgruas7?_r=1&_t=ZS-95cEvTLTXd9",
+      "cta": "Ir a TikTok",
+      "descripcion": "Ideal para publicar videos cortos de servicios, maniobras, recomendaciones y atención en carretera.",
+      "formato": "Videos cortos",
+      "frecuencia": "Contenido en movimiento",
+      "icono": "bi-music-note-beamed"
+    },
+    {
+      "plataforma": "Instagram",
+      "handle": "@mycgruas",
+      "url": "https://www.instagram.com/mycgruas?igsh=ejJ2dGFqajJlMWcz",
+      "cta": "Ir a Instagram",
+      "descripcion": "Útil para mostrar fotos, historias, reels y evidencia diaria de los servicios realizados.",
+      "formato": "Fotos, reels e historias",
+      "frecuencia": "Marca y confianza",
+      "icono": "bi-instagram"
+    },
+    {
+      "plataforma": "Facebook",
+      "handle": "M&C Grúas",
+      "url": "https://www.facebook.com/share/14oiQRtcPY/",
+      "cta": "Ir a Facebook",
+      "descripcion": "Canal útil para presencia local, publicaciones informativas, recomendaciones y contacto rápido.",
+      "formato": "Comunidad y publicaciones",
+      "frecuencia": "Alcance local",
+      "icono": "bi-facebook"
+    }
+  ],
+  "destacados": [
+    {
+      "titulo": "Video de traslado en carretera",
+      "descripcion": "Puedes publicar aquí una pieza donde se vea el proceso real de atención, cargue y entrega del vehículo.",
+      "thumbnail": "assets/img/principalGrua.jpeg",
+      "alt": "Vista previa de contenido para redes sociales sobre una grúa en carretera",
+      "url": "https://www.tiktok.com/@mcgruas7?_r=1&_t=ZS-95cEvTLTXd9",
+      "tipo": "TikTok sugerido"
+    },
+    {
+      "titulo": "Reel de maquinaria y cargas",
+      "descripcion": "Ideal para mostrar variedad de servicios y reforzar que no solo se atienden carros particulares.",
+      "thumbnail": "assets/img/GruaFondo2.jpeg",
+      "alt": "Vista previa de contenido para redes sobre transporte de maquinaria",
+      "url": "",
+      "tipo": "Reel recomendado"
+    },
+    {
+      "titulo": "Post de cobertura en Cali",
+      "descripcion": "Un espacio para destacar zonas atendidas, tiempos de respuesta y recomendaciones para solicitar el servicio.",
+      "thumbnail": "assets/img/GruaFondo.jpeg",
+      "alt": "Vista previa de contenido para redes sobre cobertura en Cali",
+      "url": "",
+      "tipo": "Contenido de marca"
+    }
+  ]
+}

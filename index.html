@@ -1,356 +1,721 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Metadatos básicos -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>M&C Grúas</title>
-  <meta name="description" content="M&C Grúas - Servicios de grúa y transporte especializado" />
-  <meta name="keywords" content="grúas, transporte, servicios de grúa, asistencia en carretera" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Grúas en Cali 24 Horas | M&C Grúas - Cobertura en Colombia</title>
+  <meta
+    name="description"
+    content="Servicio de grúas 24 horas en Cali con cobertura urbana, intermunicipal y nacional. Traslado de carros, motos, camionetas y maquinaria en toda Colombia."
+  />
   <meta name="author" content="M&C Grúas" />
-  <link rel="icon" href="assets/img/LogoGrua1.png" type="image/x-icon" />
-
-  <!-- Fuentes y estilos -->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#f5b219" />
+  <link rel="canonical" href="https://mycgruas.com/" />
+  <link rel="icon" href="assets/img/LogoGrua1.png" type="image/png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:title" content="Grúas en Cali 24 Horas | M&C Grúas" />
+  <meta
+    property="og:description"
+    content="Atención 24/7 en Cali y cobertura en toda Colombia para remolque, asistencia vial y transporte de maquinaria."
+  />
+  <meta property="og:url" content="https://mycgruas.com/" />
+  <meta property="og:image" content="https://mycgruas.com/assets/img/GruaFondo.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Grúas en Cali 24 Horas | M&C Grúas" />
+  <meta
+    name="twitter:description"
+    content="Servicio de grúas en Cali, Valle del Cauca y toda Colombia. Atención rápida por llamada y WhatsApp."
+  />
+  <meta name="twitter:image" content="https://mycgruas.com/assets/img/GruaFondo.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "M&C Grúas",
+      "url": "https://mycgruas.com/",
+      "image": "https://mycgruas.com/assets/img/GruaFondo.jpeg",
+      "logo": "https://mycgruas.com/assets/img/LogoGrua1.png",
+      "description": "Servicio de grúas 24 horas en Cali con cobertura en toda Colombia para remolque de vehículos, asistencia vial y transporte de maquinaria.",
+      "telephone": "+57 317 713 7402",
+      "email": "gruamcgruas@gmail.com",
+      "areaServed": [
+        "Cali",
+        "Valle del Cauca",
+        "Colombia"
+      ],
+      "serviceType": [
+        "Grúas 24 horas",
+        "Remolque de vehículos",
+        "Asistencia vial",
+        "Transporte de maquinaria",
+        "Traslados intermunicipales"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+57 317 713 7402",
+          "contactType": "customer service",
+          "areaServed": "CO",
+          "availableLanguage": [
+            "Spanish"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+57 316 649 3568",
+          "contactType": "customer service",
+          "areaServed": "CO",
+          "availableLanguage": [
+            "Spanish"
+          ]
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/share/14oiQRtcPY/",
+        "https://www.instagram.com/mycgruas?igsh=ejJ2dGFqajJlMWcz"
+      ]
+    }
+  </script>
 </head>
 <body>
+  <header class="site-header fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="#inicio" aria-label="Ir al inicio de M&C Grúas">
+          <img src="assets/img/LogoGrua1.png" alt="Logo M&C Grúas" class="logo-img" />
+          <span class="brand-copy">
+            <strong>M&C Grúas</strong>
+            <small>Servicio de grúas 24/7</small>
+          </span>
+        </a>
 
-  <!-- Barra de navegación fija -->
-  <header class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
-    <div class="container">
-      <!-- Logo y nombre de la empresa -->
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
-        <img src="assets/img/LogoGrua1.png" alt="Logo" class="logo-img" />
-        <span class="text-warning fs-3">M&C Grúas</span>
-      </a>
-      
-      <!-- Botón para menú colapsable en dispositivos pequeños -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Abrir navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- Menú de navegación -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item"><a class="nav-link text-white fs-5" href="#inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link text-white fs-5" href="#servicios">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link text-white fs-5" href="#nosotros">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link text-white fs-5" href="#galeria">Galería</a></li>
-          <li class="nav-item"><a class="nav-link text-white fs-5" href="#contacto">Contacto</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#guia">Guía útil</a></li>
+            <li class="nav-item"><a class="nav-link" href="flota.html">Flota</a></li>
+            <li class="nav-item"><a class="nav-link" href="redes.html">Redes</a></li>
+            <li class="nav-item"><a class="nav-link" href="experiencia.html">Experiencia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
 
-  <!-- Sección Inicio -->
-  <section id="inicio" class="d-flex align-items-center text-white" style="min-height: 100vh; background: linear-gradient(to right, #000000cc, #000000cc), url('assets/img/GruaFondo.jpeg') center/cover no-repeat;">
-    <div class="container py-5">
-      <div class="row align-items-center">
-        <!-- Texto principal -->
-        <div class="col-md-6 text-center text-md-start">
-          <h1 class="display-3 fw-bold mb-3 text-warning">M&C GRÚAS</h1>
-          <p class="lead fs-4">Seguridad, rapidez y confianza al alcance de una llamada</p>
-          
-          <!-- Botones de acción -->
-          <div class="d-flex gap-3 justify-content-center justify-content-md-start mt-4">
-            <a href="tel:+573177137402" class="btn btn-warning btn-lg d-flex align-items-center gap-2">
-              <i class="bi bi-telephone-fill"></i> Llamar ahora
-            </a>
-            <a href="https://wa.me/573166493568" target="_blank" class="btn btn-success btn-lg d-flex align-items-center gap-2">
-              <i class="bi bi-whatsapp"></i> WhatsApp
-            </a>
+  <main>
+    <section id="inicio" class="hero-section">
+      <div class="hero-backdrop"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7">
+            <span class="section-tag">Atención 24/7 en Cali</span>
+            <h1>Grúas en Cali 24 horas con cobertura en toda Colombia</h1>
+            <p class="hero-lead">
+              Atención rápida para carros, motos, camionetas y maquinaria. Coordinamos servicios urbanos,
+              intermunicipales y nacionales con enfoque en seguridad, comunicación y respuesta oportuna.
+            </p>
+
+            <div class="hero-badges" aria-label="Beneficios principales">
+              <span><i class="bi bi-clock-history"></i> Atención 24/7</span>
+              <span><i class="bi bi-geo-alt"></i> Base operativa en Cali</span>
+              <span><i class="bi bi-sign-turn-right"></i> Cobertura nacional</span>
+            </div>
+
+            <div class="hero-actions">
+              <a href="tel:+573177137402" class="btn btn-warning btn-lg">
+                <i class="bi bi-telephone-fill"></i>
+                Llamar ahora
+              </a>
+              <a
+                href="https://wa.me/573166493568?text=Hola%20M%26C%20Gr%C3%BAas,%20necesito%20ayuda%20con%20un%20servicio%20de%20gr%C3%BAa."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-success btn-lg"
+              >
+                <i class="bi bi-whatsapp"></i>
+                WhatsApp
+              </a>
+              <a href="#contacto" class="btn btn-outline-light btn-lg">
+                Solicitar servicio
+              </a>
+            </div>
+
+            <div class="hero-info-grid">
+              <article class="info-card">
+                <strong>Cobertura principal</strong>
+                <p>Cali, Valle del Cauca y atención coordinada en carreteras de Colombia.</p>
+              </article>
+              <article class="info-card">
+                <strong>Vehículos atendidos</strong>
+                <p>Carros, motos, camionetas, vehículos averiados y maquinaria liviana.</p>
+              </article>
+              <article class="info-card">
+                <strong>Canales rápidos</strong>
+                <p>Llamada inmediata, WhatsApp, fotografías y ubicación compartida en tiempo real.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="hero-panel">
+              <div class="hero-media">
+                <img
+                  src="assets/img/principalGrua.jpeg"
+                  alt="Camiones de grúa disponibles para servicios en carretera"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="hero-checklist">
+                <h2>Para ayudarte más rápido envíanos:</h2>
+                <ul>
+                  <li>Ubicación exacta o ubicación en vivo</li>
+                  <li>Tipo de vehículo y estado actual</li>
+                  <li>Foto del vehículo o de la novedad</li>
+                  <li>Punto de destino o taller</li>
+                </ul>
+                <p>Mientras llega la grúa, ubícate en una zona segura y activa las luces de emergencia.</p>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Imagen decorativa -->
-        <div class="col-md-6 text-center mt-4 mt-md-0 d-none d-md-block">
-          <img src="assets/img/LogoGruas.jpeg" alt="Logo Grua" class="img-fluid rounded-circle shadow" style="max-width: 300px;">
+    <section id="servicios" class="content-section section-light">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Servicios principales</span>
+          <h2>Soluciones de grúa pensadas para emergencias y traslados programados</h2>
+          <p>
+            Organizamos servicios tanto para conductores varados en Cali como para traslados entre ciudades,
+            empresas y necesidades especiales en carretera.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4">
+            <article class="service-card">
+              <i class="bi bi-truck-flatbed"></i>
+              <h3>Grúas para carros</h3>
+              <p>Remolque seguro para vehículos averiados, inmovilizados o trasladados a taller.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="service-card">
+              <i class="bi bi-bicycle"></i>
+              <h3>Traslado de motos</h3>
+              <p>Atención especializada para motocicletas con protocolos de sujeción y transporte.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="service-card">
+              <i class="bi bi-cone-striped"></i>
+              <h3>Asistencia vial 24/7</h3>
+              <p>Respuesta permanente para urgencias en ciudad, carretera y horarios nocturnos.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="service-card">
+              <i class="bi bi-buildings"></i>
+              <h3>Servicios urbanos e intermunicipales</h3>
+              <p>Movilización dentro de Cali y coordinación de recorridos a municipios y otras ciudades.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="service-card">
+              <i class="bi bi-gear-wide-connected"></i>
+              <h3>Transporte de maquinaria</h3>
+              <p>Movemos equipos y maquinaria liviana con atención logística para carga segura.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="service-card">
+              <i class="bi bi-shield-check"></i>
+              <h3>Apoyo en eventos de varada o accidente</h3>
+              <p>Te orientamos para coordinar el traslado priorizando seguridad y comunicación.</p>
+            </article>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Sección Servicios -->
-  <section id="servicios" class="py-5 bg-light">
+    <section id="cobertura" class="content-section section-dark">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-6">
+            <span class="section-tag">Cobertura</span>
+            <h2>Operación fuerte en Cali y capacidad para atender servicios en toda Colombia</h2>
+            <p class="section-intro">
+              La página debe comunicar con claridad dónde están más fuertes y hasta dónde pueden responder.
+              Por eso dejamos la estructura enfocada en Cali, sin perder el mensaje de cobertura nacional.
+            </p>
+
+            <div class="coverage-list">
+              <article class="coverage-card">
+                <h3><i class="bi bi-geo-alt-fill"></i> Cali y alrededores</h3>
+                <p>Servicio urbano para barrios, vías principales, talleres, parqueaderos y rutas de salida.</p>
+              </article>
+              <article class="coverage-card">
+                <h3><i class="bi bi-map-fill"></i> Valle del Cauca</h3>
+                <p>Atención en corredores cercanos, municipios del departamento y necesidades intermunicipales.</p>
+              </article>
+              <article class="coverage-card">
+                <h3><i class="bi bi-signpost-split-fill"></i> Toda Colombia</h3>
+                <p>Traslados y coordinaciones nacionales para conductores, empresas y maquinaria.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="process-panel">
+              <span class="section-tag section-tag-dark">Cómo solicitar una grúa</span>
+              <div class="process-step">
+                <strong>1. Escríbenos o llámanos</strong>
+                <p>Indica si estás en Cali o en carretera, y cuéntanos qué pasó con el vehículo.</p>
+              </div>
+              <div class="process-step">
+                <strong>2. Comparte ubicación y fotos</strong>
+                <p>Con la ubicación exacta y una imagen del vehículo podemos coordinar mejor la atención.</p>
+              </div>
+              <div class="process-step">
+                <strong>3. Confirma el destino</strong>
+                <p>Define si el traslado es a taller, parqueadero, vivienda, empresa o a otra ciudad.</p>
+              </div>
+
+              <div class="process-note">
+                <h3>Información útil para agilizar la atención</h3>
+                <ul>
+                  <li>Nombre y número de contacto</li>
+                  <li>Tipo de vehículo</li>
+                  <li>Ubicación exacta o ubicación compartida</li>
+                  <li>Falla, accidente o tipo de novedad</li>
+                  <li>Destino del traslado</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guia" class="content-section section-light">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Guía útil en carretera</span>
+          <h2>Contenido pensado para personas que necesitan ayuda real mientras esperan la grúa</h2>
+          <p>
+            Este bloque aporta valor, genera confianza y ayuda a posicionar mejor la página con información útil
+            para quienes están en carretera o acaban de sufrir una varada.
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-6">
+            <div class="tips-grid">
+              <article class="tip-card">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                <div>
+                  <h3>Prioriza tu seguridad</h3>
+                  <p>Enciende las luces de emergencia, busca un punto seguro y evita quedarte sobre la vía.</p>
+                </div>
+              </article>
+              <article class="tip-card">
+                <i class="bi bi-geo-fill"></i>
+                <div>
+                  <h3>Comparte tu ubicación</h3>
+                  <p>Enviar la ubicación en vivo por WhatsApp reduce errores y acelera el despacho del servicio.</p>
+                </div>
+              </article>
+              <article class="tip-card">
+                <i class="bi bi-camera-fill"></i>
+                <div>
+                  <h3>Toma una foto del vehículo</h3>
+                  <p>Una imagen del estado del vehículo ayuda a definir el tipo de grúa o maniobra requerida.</p>
+                </div>
+              </article>
+              <article class="tip-card">
+                <i class="bi bi-sign-turn-right-fill"></i>
+                <div>
+                  <h3>Ten claro tu destino</h3>
+                  <p>Decide si el traslado será a un taller, parqueadero o a otra ciudad para cotizar mejor.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="accordion faq-accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne">
+                    ¿Atienden en Cali las 24 horas?
+                  </button>
+                </h3>
+                <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Sí. La operación principal está enfocada en Cali, con atención permanente para emergencias y traslados.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo">
+                    ¿También prestan servicio fuera de Cali?
+                  </button>
+                </h3>
+                <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Sí. Se coordinan servicios en el Valle del Cauca y también traslados o atenciones en otras zonas de Colombia.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree">
+                    ¿Qué información debo enviar por WhatsApp?
+                  </button>
+                </h3>
+                <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Nombre, número de contacto, ubicación exacta, foto del vehículo, tipo de novedad y destino del traslado.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour">
+                    ¿Qué tipo de vehículos pueden trasladar?
+                  </button>
+                </h3>
+                <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Carros, motos, camionetas, vehículos inmovilizados y maquinaria liviana, según disponibilidad operativa.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive">
+                    ¿Cómo se puede mejorar esta sección con el tiempo?
+                  </button>
+                </h3>
+                <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Puedes añadir nuevas preguntas frecuentes, recomendaciones para carretera y casos reales con base en las consultas más comunes de los clientes.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-bridge">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Más que una landing</span>
+          <h2>Conoce la flota, las redes y el espacio de satisfacción del servicio</h2>
+          <p>
+            La home sigue enfocada en convertir visitas en llamadas, pero ahora el sitio también puede crecer como un
+            espacio de confianza, comunidad y mejora continua.
+          </p>
+        </div>
+
+        <div class="section-bridge-grid">
+          <article class="bridge-card">
+            <span class="fleet-badge">flota.html</span>
+            <h3>Flota y datos de la empresa</h3>
+            <p>Una página para mostrar las grúas disponibles, el enfoque operativo y la información empresarial.</p>
+            <a href="flota.html">Ver la flota</a>
+          </article>
+
+          <article class="bridge-card">
+            <span class="fleet-badge">redes.html</span>
+            <h3>Presencia en redes sociales</h3>
+            <p>Espacio ideal para TikTok, Instagram, Facebook y publicaciones destacadas con videos o enlaces.</p>
+            <a href="redes.html">Ver redes sociales</a>
+          </article>
+
+          <article class="bridge-card">
+            <span class="fleet-badge">experiencia.html</span>
+            <h3>Opiniones y sugerencias</h3>
+            <p>Recoge satisfacción del servicio, sugerencias de mejora y testimonios aprobados para publicar.</p>
+            <a href="experiencia.html">Abrir experiencia del cliente</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="content-section section-gallery">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Galería administrable</span>
+          <h2>Evidencias reales del servicio con una estructura más fácil de mantener</h2>
+          <p>
+            La galería ahora queda preparada para leerse desde un archivo JSON, de modo que puedas agregar imágenes
+            nuevas sin tocar el HTML de la página.
+          </p>
+        </div>
+
+        <div class="gallery-shell">
+          <div id="galeriaStatus" class="gallery-status d-none" role="status"></div>
+
+          <div id="carruselGaleria" class="carousel slide gallery-carousel" data-bs-touch="true" data-bs-wrap="true">
+            <div class="carousel-indicators" id="galeriaIndicadores"></div>
+            <div class="carousel-inner" id="galeriaCarouselInner"></div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselGaleria" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselGaleria" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+
+          <div class="gallery-thumbnails" id="galeriaMiniaturas" aria-label="Miniaturas de la galería"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="content-section section-contact">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Contacto</span>
+          <h2>Solicita tu servicio de grúa por llamada, WhatsApp o formulario</h2>
+          <p>
+            Si es una urgencia, lo mejor es llamar o escribir por WhatsApp. El formulario queda como apoyo para
+            solicitudes con más detalle o traslados programados.
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-5">
+            <div class="contact-card h-100">
+              <h3>M&C Grúas</h3>
+              <p class="contact-lead">Servicio principal en Cali, Valle del Cauca y cobertura en toda Colombia.</p>
+
+              <div class="contact-list">
+                <a href="tel:+573177137402">
+                  <i class="bi bi-telephone-fill"></i>
+                  317 713 7402
+                </a>
+                <a href="tel:+573166493568">
+                  <i class="bi bi-telephone-fill"></i>
+                  316 649 3568
+                </a>
+                <a href="mailto:gruamcgruas@gmail.com">
+                  <i class="bi bi-envelope-fill"></i>
+                  gruamcgruas@gmail.com
+                </a>
+                <a
+                  href="https://wa.me/573166493568?text=Hola%20M%26C%20Gr%C3%BAas,%20necesito%20apoyo%20con%20una%20gr%C3%BAa."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="bi bi-whatsapp"></i>
+                  Escribir por WhatsApp
+                </a>
+              </div>
+
+              <div class="contact-meta">
+                <div>
+                  <strong>Horario</strong>
+                  <span>24 horas / 7 días</span>
+                </div>
+                <div>
+                  <strong>Enfoque</strong>
+                  <span>Atención rápida y traslado seguro</span>
+                </div>
+                <div>
+                  <strong>Cobertura</strong>
+                  <span>Cali, Valle del Cauca y Colombia</span>
+                </div>
+              </div>
+
+              <div class="contact-social">
+                <a href="https://www.facebook.com/share/14oiQRtcPY/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/mycgruas?igsh=ejJ2dGFqajJlMWcz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="form-wrapper">
+              <form
+                id="formularioContacto"
+                class="contact-form"
+                action="https://formspree.io/f/mrbprrvj"
+                method="POST"
+                data-async-form
+                data-message-target="mensajeFormulario"
+                data-sending-text="Enviando solicitud..."
+                data-success-message="Gracias. Tu solicitud fue enviada correctamente. Si es urgente, te recomendamos llamar o escribir por WhatsApp."
+                data-error-message="Ocurrió un problema al enviar el formulario. Intenta nuevamente o comunícate por llamada o WhatsApp."
+              >
+                <input type="hidden" name="_subject" value="Nueva solicitud desde mycgruas.com" />
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" class="form-control" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" id="email" name="email" class="form-control" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="vehiculo" class="form-label">Tipo de vehículo</label>
+                    <input type="text" id="vehiculo" name="vehiculo" class="form-control" placeholder="Carro, moto, camioneta, maquinaria..." />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="ubicacion" class="form-label">Ubicación actual</label>
+                    <input type="text" id="ubicacion" name="ubicacion" class="form-control" placeholder="Barrio, vía o municipio" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="destino" class="form-label">Destino del traslado</label>
+                    <input type="text" id="destino" name="destino" class="form-control" placeholder="Taller, ciudad o dirección" />
+                  </div>
+                  <div class="col-12">
+                    <label for="mensaje" class="form-label">Cuéntanos qué pasó</label>
+                    <textarea
+                      id="mensaje"
+                      name="mensaje"
+                      class="form-control"
+                      rows="5"
+                      placeholder="Describe la novedad, si el vehículo enciende, si hubo accidente o cualquier detalle útil."
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-warning btn-lg w-100 mt-4">Solicitar información</button>
+                <div id="mensajeFormulario" class="form-status d-none" role="alert"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="container">
-      <h2 class="text-center mb-5 text-black display-5 fw-bold">Nuestros Servicios</h2>
-
-      <div class="row g-4">
-
-        <!-- Servicio 1 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow text-center p-4 border-0">
-            <div class="mb-3">
-              <i class="bi bi-truck text-warning" style="font-size: 3rem;"></i>
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <img src="assets/img/LogoGrua1.png" alt="Logo M&C Grúas" class="footer-logo" />
+            <div>
+              <h2>M&C Grúas</h2>
+              <p>Servicio de grúas 24 horas en Cali con cobertura en toda Colombia.</p>
             </div>
-            <h5 class="fw-bold">Asistencia 24/7</h5>
-            <p>Ofrecemos servicio de grúa disponible todos los días, a cualquier hora del día o la noche.</p>
           </div>
         </div>
 
-        <!-- Servicio 2 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow text-center p-4 border-0">
-            <div class="mb-3">
-              <i class="bi bi-gear-fill text-warning" style="font-size: 3rem;"></i>
-            </div>
-            <h5 class="fw-bold">Remolque de Vehículos</h5>
-            <p>Traslado seguro de vehículos livianos, pesados o con fallas mecánicas.</p>
-          </div>
+        <div class="col-sm-6 col-lg-4">
+          <h3>Enlaces</h3>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#guia">Guía útil</a></li>
+            <li><a href="flota.html">Flota</a></li>
+            <li><a href="redes.html">Redes</a></li>
+            <li><a href="experiencia.html">Experiencia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
         </div>
 
-        <!-- Servicio 3 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow text-center p-4 border-0">
-            <div class="mb-3">
-              <i class="bi bi-box-seam text-warning" style="font-size: 3rem;"></i>
-            </div>
-            <h5 class="fw-bold">Transporte de Cargas</h5>
-            <p>Movilizamos maquinaria y cargas especiales con grúas modernas y personal capacitado.</p>
-          </div>
+        <div class="col-sm-6 col-lg-4">
+          <h3>Contacto rápido</h3>
+          <ul class="footer-contact">
+            <li><a href="tel:+573177137402">317 713 7402</a></li>
+            <li><a href="tel:+573166493568">316 649 3568</a></li>
+            <li><a href="mailto:gruamcgruas@gmail.com">gruamcgruas@gmail.com</a></li>
+            <li><a href="https://mycgruas.com/">mycgruas.com</a></li>
+          </ul>
         </div>
       </div>
 
-      <!-- Nota adicional -->
-      <div class="text-center mt-5">
-        <p class="text-muted">
-          Contamos con una flota moderna y un equipo humano dispuesto a ofrecerte seguridad, compromiso y eficiencia en cada traslado.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección Nosotros -->
-  <section id="nosotros" class="py-5 bg-white">
-    <div class="container">
-      <h2 class="text-center text-black mb-5 display-5 fw-bold">Sobre Nosotros</h2>
-      <div class="row align-items-center justify-content-center">
-        
-        <!-- Historia -->
-        <div class="col-md-5 text-center text-md-start mb-4 mb-md-0">
-          <h3 class="text-warning fw-bold mb-3">Nuestra Historia</h3>
-          <p class="text-dark">
-            M&C Grúas nació con el compromiso de brindar un servicio de transporte seguro y eficiente.
-            Desde nuestros inicios, nos hemos enfocado en responder a las emergencias viales con responsabilidad y rapidez,
-            ganándonos la confianza de nuestros clientes a lo largo de los años.
-          </p>
-        </div>
-
-        <!-- Logo decorativo -->
-        <div class="col-md-2 text-center mb-4 mb-md-0">
-          <img src="assets/img/LogoGruas.jpeg" alt="Logo M&C Grúas" class="img-fluid rounded-circle shadow" style="width: 160px; height: 160px; object-fit: cover;">
-        </div>
-
-        <!-- Misión -->
-        <div class="col-md-5 text-center text-md-start">
-          <h3 class="text-warning fw-bold mb-3">Nuestra Misión</h3>
-          <p class="text-dark">
-            Nuestra misión es ofrecer soluciones de remolque y transporte con profesionalismo, puntualidad y un enfoque en la seguridad del cliente y su vehículo.
-          </p>
-        </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> M&C Grúas. Todos los derechos reservados.</p>
+        <p>Atención principal en Cali | Cobertura nacional en Colombia</p>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <!-- Sección Galería -->
-<section id="galeria" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-5 text-black display-5 fw-bold">Galería</h2>
-
-    <div id="carruselGaleria" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-wrap="true">
-      <div class="carousel-inner rounded shadow-lg overflow-hidden" style="max-height: 500px;">
-        <!-- Las 19 imágenes del carrusel -->
-        <div class="carousel-item active">
-          <img src="assets/ImgGruas/Grua (1).jpeg" class="d-block w-100 img-galeria" alt="Servicio 1">
-        </div>
-
-        <!-- Carrusel de imagenes -->
-      
-        <!-- Siguiente bloque generado a mano -->
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (1).jpeg" class="d-block w-100 img-galeria" alt="Servicio 1"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (2).jpeg" class="d-block w-100 img-galeria" alt="Servicio 2"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (3).jpeg" class="d-block w-100 img-galeria" alt="Servicio 3"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (4).jpeg" class="d-block w-100 img-galeria" alt="Servicio 4"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (5).jpeg" class="d-block w-100 img-galeria" alt="Servicio 5"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (6).jpeg" class="d-block w-100 img-galeria" alt="Servicio 6"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (7).jpeg" class="d-block w-100 img-galeria" alt="Servicio 7"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (8).jpeg" class="d-block w-100 img-galeria" alt="Servicio 8"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (9).jpeg" class="d-block w-100 img-galeria" alt="Servicio 9"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (10).jpeg" class="d-block w-100 img-galeria" alt="Servicio 10"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (11).jpeg" class="d-block w-100 img-galeria" alt="Servicio 11"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (12).jpeg" class="d-block w-100 img-galeria" alt="Servicio 12"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (13).jpeg" class="d-block w-100 img-galeria" alt="Servicio 13"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (14).jpeg" class="d-block w-100 img-galeria" alt="Servicio 14"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (15).jpeg" class="d-block w-100 img-galeria" alt="Servicio 15"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (16).jpeg" class="d-block w-100 img-galeria" alt="Servicio 16"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (17).jpeg" class="d-block w-100 img-galeria" alt="Servicio 17"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (18).jpeg" class="d-block w-100 img-galeria" alt="Servicio 18"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (19).jpeg" class="d-block w-100 img-galeria" alt="Servicio 19"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (20).jpeg" class="d-block w-100 img-galeria" alt="Servicio 20"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (22).jpeg" class="d-block w-100 img-galeria" alt="Servicio 22"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (23).jpeg" class="d-block w-100 img-galeria" alt="Servicio 23"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (24).jpeg" class="d-block w-100 img-galeria" alt="Servicio 24"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (25).jpeg" class="d-block w-100 img-galeria" alt="Servicio 25"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (26).jpeg" class="d-block w-100 img-galeria" alt="Servicio 26"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (27).jpeg" class="d-block w-100 img-galeria" alt="Servicio 27"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (28).jpeg" class="d-block w-100 img-galeria" alt="Servicio 28"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (29).jpeg" class="d-block w-100 img-galeria" alt="Servicio 29"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (30).jpeg" class="d-block w-100 img-galeria" alt="Servicio 30"></div>
-        <div class="carousel-item"><img src="assets/ImgGruas/Grua (31).jpeg" class="d-block w-100 img-galeria" alt="Servicio 31"></div>
-      </div>
-
-      <!-- Controles -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carruselGaleria" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carruselGaleria" data-bs-slide="next">
-        <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
-    </div>
+  <div class="floating-cta" aria-label="Acciones rápidas">
+    <a href="tel:+573177137402" class="floating-call">
+      <i class="bi bi-telephone-fill"></i>
+      <span>Llamar</span>
+    </a>
+    <a
+      href="https://wa.me/573166493568?text=Hola%20M%26C%20Gr%C3%BAas,%20necesito%20una%20gr%C3%BAa."
+      class="floating-whatsapp"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="bi bi-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
   </div>
-</section>
 
-
-  <!-- Sección Contacto -->
-<!-- Sección Contacto -->
-<section id="contacto" class="py-5 bg-white">
-  <div class="container">
-    <h2 class="text-center mb-5 text-black display-5 fw-bold">Contáctanos</h2>
-    
-    <div class="row g-4">
-      
-      <!-- Formulario -->
-      <div class="col-md-6">
-        <div class="card shadow border-0 p-4">
-          <form id="formularioContacto" class="bg-light p-4 rounded shadow">
-            <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre completo</label>
-              <input type="text" name="nombre" class="form-control" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Correo electrónico</label>
-              <input type="email" name="email" class="form-control" required>
-            </div>
-            <div class="mb-3">
-              <label for="telefono" class="form-label">Teléfono</label>
-              <input type="tel" name="telefono" class="form-control">
-            </div>
-            <div class="mb-3">
-              <label for="mensaje" class="form-label">Mensaje</label>
-              <textarea name="mensaje" class="form-control" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-warning w-100">Enviar mensaje</button>
-      
-            <!-- Mensaje de éxito personalizado -->
-            <div id="mensajeExito" class="alert alert-success mt-3 d-none" role="alert">
-              ✅ ¡Gracias! Tu mensaje fue enviado correctamente.
-            </div>
-          </form>
-        </div>
-      </div>
-      <!-- Datos de contacto -->
-      <div class="col-md-6 d-flex align-items-center justify-content-center">
-        <div class="bg-black text-white p-4 rounded-4 shadow text-center" style="width: 100%; max-width: 350px;">
-          <h4 class="fw-bold mb-3 text-warning">M&C Grúas</h4>
-          <p class="mb-2">
-            <i class="bi bi-telephone-fill me-2 text-warning"></i>
-            <a href="tel:+573123456789" class="text-white text-decoration-none">317 713 7402</a>
-          </p>
-          <p class="mb-2">
-            <i class="bi bi-telephone-fill me-2 text-warning"></i>
-            <a href="tel:+573166493568" class="text-white text-decoration-none">316 649 3568</a>
-          </p>
-          <p class="mb-2">
-            <i class="bi bi-envelope-fill me-2 text-warning"></i>
-            <a href="mailto:gruamcgruas@gmail.com" class="text-white text-decoration-none">gruamcgruas@gmail.com
-            </a>
-          </p>
-          <p class="mt-4 fw-semibold">Horario de atención</p>
-          <h3 class="text-warning fw-bold" style="font-size: 2.2rem;">24 HORAS</h3>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-  
-  
-  
-  
-<!-- Footer -->
-<!-- Footer -->
-<footer class="bg-black text-white pt-5 pb-3 mt-5">
-  <div class="container">
-    <div class="row align-items-center text-center text-md-start">
-
-
-  <!-- Logo a la izquierda -->
-<div class="col-md-4 mb-4 mb-md-0 d-flex justify-content-center justify-content-md-start">
-  <div class="logo-footer bg-white rounded-circle d-flex align-items-center justify-content-center shadow" style="width: 110px; height: 110px;">
-    <img src="assets/img/LogoGrua1.png" alt="Logo M&C Grúas" class="img-fluid" style="max-width: 80px; max-height: 80px;">
-  </div>
-</div>
-
-
-      <!-- Enlaces al centro -->
-      <div class="col-md-4 mb-4 mb-md-0">
-        <h5 class="text-warning fw-bold mb-3">Enlaces</h5>
-        <ul class="list-unstyled">
-          <li><a href="#inicio" class="text-white text-decoration-none">Inicio</a></li>
-          <li><a href="#servicios" class="text-white text-decoration-none">Servicios</a></li>
-          <li><a href="#nosotros" class="text-white text-decoration-none">Nosotros</a></li>
-          <li><a href="#galeria" class="text-white text-decoration-none">Galería</a></li>
-          <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
-        </ul>
-      </div>
-
-      <!-- Redes y contacto a la derecha -->
-      <div class="col-md-4">
-        <h5 class="text-warning fw-bold mb-3">Síguenos</h5>
-        <div class="d-flex justify-content-center justify-content-md-start gap-3 mb-3">
-          <a href="https://www.facebook.com/share/14oiQRtcPY/" target="_blank" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/mycgruas?igsh=ejJ2dGFqajJlMWcz" target="_blank" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
-        </div>
-        <p class="mb-0">
-          <i class="bi bi-envelope me-2 text-warning"></i>
-          <a href="mailto:gruamcgruas@gmail.com" class="text-white text-decoration-none">gruamcgruas@gmail.com
-          </a>
-        </p>
-        <br>
-        
-        <!-- Teléfono con enlace funcional -->
-        <p>
-          <i class="bi bi-telephone me-2 text-warning"></i>
-          <a href="tel:+573166493568" class="text-white text-decoration-none">316 649 3568</a>
-        </p>
-        <p>
-          <i class="bi bi-telephone me-3 text-warning"></i>
-          <a href="tel:+573177137402" class="text-white text-decoration-none">317 713 7402</a>
-        </p>
-      </div>
-
-    </div>
-
-    <hr class="border-secondary my-4">
-
-    <p class="text-center mb-0">&copy; 2025 M&C Grúas - Todos los derechos reservados.</p>
-  </div>
-</footer>
-  
-    <!-- Fin del Footer -->
-  
-    <!-- Scripts de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  
-    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
 </body>
 </html>
