@@ -1,0 +1,11 @@
+{
+  "_guia": "Para publicar una opinion nueva, agrega un objeto dentro de 'testimonios' con nombre, empresa, ciudad, servicio, calificacion y comentario. Publica solo testimonios aprobados o autorizados por el cliente.",
+  "resumen": {
+    "titulo": "Escuchamos cada servicio para seguir mejorando",
+    "descripcion": "La idea de esta página es recoger opiniones, detectar oportunidades de mejora y publicar únicamente los comentarios aprobados por la empresa o autorizados por el cliente.",
+    "publicadas": "0",
+    "moderacion": "Manual",
+    "privacidad": "Nombre o empresa con autorización"
+  },
+  "testimonios": []
+}

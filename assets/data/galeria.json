@@ -1,0 +1,215 @@
+{
+  "_guia": "Para agregar una imagen a la galeria principal: sube la foto a assets/ImgGruas/ y agrega un nuevo objeto dentro de 'items' con src, alt, titulo, descripcion y categoria.",
+  "items": [
+  {
+    "src": "assets/ImgGruas/Grua (1).jpeg",
+    "alt": "Servicio de grúa urbana para vehículo en Cali",
+    "titulo": "Atención urbana para vehículos particulares",
+    "descripcion": "Servicios de remolque coordinados para carros averiados y traslados seguros dentro de la ciudad.",
+    "categoria": "Grúas en Cali"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (2).jpeg",
+    "alt": "Traslado de carro en plataforma de grúa",
+    "titulo": "Remolque seguro en plataforma",
+    "descripcion": "Traslado con sujeción adecuada para proteger el vehículo durante todo el recorrido.",
+    "categoria": "Remolque de carros"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (3).jpeg",
+    "alt": "Servicio de asistencia vial con grúa",
+    "titulo": "Apoyo rápido ante una varada",
+    "descripcion": "Atención pensada para emergencias mecánicas, inmovilizaciones y coordinaciones urgentes.",
+    "categoria": "Asistencia 24/7"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (4).jpeg",
+    "alt": "Camión de grúa con vehículo cargado para traslado",
+    "titulo": "Disponibilidad para servicios programados",
+    "descripcion": "También organizamos traslados programados para vehículos que requieren movilización segura.",
+    "categoria": "Traslados programados"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (5).jpeg",
+    "alt": "Grúa prestando servicio en carretera",
+    "titulo": "Cobertura en carretera",
+    "descripcion": "Servicios coordinados para conductores varados en corredores viales y rutas intermunicipales.",
+    "categoria": "Carretera"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (6).jpeg",
+    "alt": "Traslado de vehículo en grúa tipo planchón",
+    "titulo": "Movilización en planchón",
+    "descripcion": "Ideal para vehículos que necesitan soporte completo durante el traslado.",
+    "categoria": "Planchón"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (7).jpeg",
+    "alt": "Servicio de grúa para vehículo inmovilizado",
+    "titulo": "Respuesta para vehículos inmovilizados",
+    "descripcion": "Atención para autos que no pueden continuar su recorrido por fallas o novedad mecánica.",
+    "categoria": "Emergencias viales"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (8).jpeg",
+    "alt": "Grúa realizando transporte de vehículo fuera de la ciudad",
+    "titulo": "Traslados programados entre ciudades",
+    "descripcion": "Coordinamos recorridos entre Cali, Bogotá y Pasto según la necesidad del cliente.",
+    "categoria": "Rutas principales"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (9).jpeg",
+    "alt": "Servicio logístico de grúa para carro",
+    "titulo": "Apoyo logístico para traslado",
+    "descripcion": "Una opción útil para mover vehículos a talleres, parqueaderos o destinos específicos.",
+    "categoria": "Logística"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (10).jpeg",
+    "alt": "Traslado de automóvil en grúa con plataforma",
+    "titulo": "Transporte seguro de automóviles",
+    "descripcion": "Operación enfocada en seguridad, estabilidad de carga y comunicación con el cliente.",
+    "categoria": "Transporte vehicular"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (11).jpeg",
+    "alt": "Grúa cargando camioneta para traslado",
+    "titulo": "Atención para camionetas y vehículos de mayor tamaño",
+    "descripcion": "Capacidad para coordinar servicios con vehículos particulares, camionetas y otros formatos livianos.",
+    "categoria": "Camionetas"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (12).jpeg",
+    "alt": "Grúa trabajando en operación urbana",
+    "titulo": "Atención urbana con respuesta coordinada",
+    "descripcion": "Cobertura principal en Cali para solicitudes inmediatas o traslados programados.",
+    "categoria": "Cali"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (13).jpeg",
+    "alt": "Servicio de grúa para vehículo averiado",
+    "titulo": "Solución para fallas mecánicas",
+    "descripcion": "Si el vehículo no enciende o no puede movilizarse, coordinamos el traslado de forma segura.",
+    "categoria": "Varadas"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (14).jpeg",
+    "alt": "Grúa realizando maniobra de traslado",
+    "titulo": "Maniobras cuidadosas de cargue",
+    "descripcion": "Se prioriza el estado del vehículo durante la subida, sujeción y desplazamiento.",
+    "categoria": "Operación segura"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (15).jpeg",
+    "alt": "Vehículo trasladado en grúa de plataforma",
+    "titulo": "Traslado hacia talleres o parqueaderos",
+    "descripcion": "Una solución frecuente para clientes que necesitan movilizar su vehículo a un destino definido.",
+    "categoria": "Destino programado"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (16).jpeg",
+    "alt": "Grúa prestando servicio de asistencia para vehículo particular",
+    "titulo": "Atención para servicios particulares",
+    "descripcion": "Respuesta para clientes particulares que necesitan apoyo inmediato o transporte preventivo.",
+    "categoria": "Clientes particulares"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (17).jpeg",
+    "alt": "Servicio profesional de grúa en carretera entre ciudades",
+    "titulo": "Cobertura en rutas principales",
+    "descripcion": "Se coordinan servicios en carretera entre Cali, Bogotá y Pasto con apoyo logístico y atención segura.",
+    "categoria": "Rutas en carretera"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (18).jpeg",
+    "alt": "Grúa apoyando traslado de vehículo averiado",
+    "titulo": "Soporte para movilidad del vehículo",
+    "descripcion": "Ideal cuando el vehículo presenta fallas, golpes o no puede circular con seguridad.",
+    "categoria": "Asistencia vial"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (19).jpeg",
+    "alt": "Vehículo transportado en grúa a otra ubicación",
+    "titulo": "Traslados dentro y fuera de la ciudad",
+    "descripcion": "Se coordinan recorridos según la urgencia, el tipo de vehículo y el punto de destino.",
+    "categoria": "Movilidad"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (20).jpeg",
+    "alt": "Servicio de grúa para asistencia y remolque",
+    "titulo": "Servicio enfocado en rapidez y seguridad",
+    "descripcion": "La atención combina comunicación rápida con una operación orientada al cuidado del vehículo.",
+    "categoria": "Atención rápida"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (22).jpeg",
+    "alt": "Grúa transportando carga especial",
+    "titulo": "Soporte para cargas especiales",
+    "descripcion": "Capacidad para coordinar servicios que requieren plataforma y manejo cuidadoso de la carga.",
+    "categoria": "Cargas especiales"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (23).jpeg",
+    "alt": "Transporte de maquinaria con grúa",
+      "titulo": "Transporte de maquinaria pesada o liviana",
+      "descripcion": "Una alternativa práctica para equipos y maquinaria que necesitan movilización segura según disponibilidad operativa.",
+    "categoria": "Maquinaria"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (24).jpeg",
+    "alt": "Servicio logístico de grúa para maquinaria o carga",
+    "titulo": "Movilización logística para equipos",
+    "descripcion": "Ideal para clientes que necesitan trasladar maquinaria o elementos con apoyo especializado.",
+    "categoria": "Logística pesada"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (25).jpeg",
+    "alt": "Grúa operando en zona urbana para cargar vehículo",
+    "titulo": "Cobertura diaria en entornos urbanos",
+    "descripcion": "Servicios preparados para atender novedades en vías urbanas y puntos de alto flujo vehicular.",
+    "categoria": "Operación urbana"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (26).jpeg",
+    "alt": "Grúa coordinando traslado de vehículo a taller",
+    "titulo": "Traslados a talleres y parqueaderos",
+    "descripcion": "Atención organizada para dejar el vehículo en el punto final indicado por el cliente.",
+    "categoria": "Destino final"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (27).jpeg",
+    "alt": "Servicio de grúa con atención profesional",
+    "titulo": "Servicio respaldado por experiencia en carretera",
+    "descripcion": "Contenido visual útil para mostrar confianza, evidencia real y variedad de servicios prestados.",
+    "categoria": "Confianza"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (28).jpeg",
+    "alt": "Grúa en servicio regional fuera de Cali",
+    "titulo": "Atención en corredores entre ciudades",
+    "descripcion": "Una muestra de los servicios coordinados entre Cali, Bogotá y Pasto según disponibilidad operativa.",
+    "categoria": "Corredores viales"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (29).jpeg",
+    "alt": "Vehículo trasladado por grúa durante operación especializada",
+    "titulo": "Traslado especializado y seguro",
+    "descripcion": "La operación se adapta según el tipo de vehículo, la novedad y el destino requerido.",
+    "categoria": "Servicio especializado"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (30).jpeg",
+    "alt": "Camión de grúa listo para atender servicio",
+    "titulo": "Disponibilidad para nuevos servicios",
+    "descripcion": "Una muestra del respaldo operativo disponible para nuevos servicios y traslados programados.",
+    "categoria": "Flota"
+  },
+  {
+    "src": "assets/ImgGruas/Grua (31).jpeg",
+    "alt": "Servicio de grúa con cobertura entre Cali, Bogotá y Pasto",
+    "titulo": "Servicio entre ciudades principales",
+    "descripcion": "Cali es la base principal y el servicio también cubre recorridos hacia Bogotá y Pasto.",
+    "categoria": "Cali - Bogotá - Pasto"
+  }
+  ]
+}

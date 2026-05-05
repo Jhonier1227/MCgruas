@@ -1,0 +1,73 @@
+{
+  "_guia": "Para agregar una imagen reciente: sube el archivo a assets/servicios-recientes/ y registra un nuevo objeto dentro de 'items' con numero, nombre y fecha. Para borrar una imagen, elimina el archivo y su registro.",
+  "items": [
+  {
+    "numero": 1,
+    "nombre": "servicio-001.jpeg",
+    "fecha": "2026-04-17"
+  },
+  {
+    "numero": 2,
+    "nombre": "servicio-002.jpeg",
+    "fecha": "2026-04-17"
+  },
+  {
+    "numero": 3,
+    "nombre": "servicio-003.jpeg",
+    "fecha": "2026-04-17"
+  },
+  {
+    "numero": 4,
+    "nombre": "servicio-004.jpeg",
+    "fecha": "2026-04-17"
+  },
+  {
+    "numero": 5,
+    "nombre": "servicio-005.jpeg",
+    "fecha": "2026-04-17"
+  },
+
+  {
+    "numero": 6,
+    "nombre": "GruaM&C (1).jpeg",
+    "fecha": "2026-04-17"
+  },
+  {
+    "numero": 7,
+    "nombre": "GruaM&C (2).jpeg",
+    "fecha": "2026-04-17"
+  },
+  {
+    "numero": 8,
+    "nombre": "GruaM&C (3).jpeg",
+    "fecha": "2026-04-17"
+  },
+  {
+    "numero": 9,
+    "nombre": "GruaM&C (4).jpeg",
+    "fecha": "2026-04-17"
+  },
+  {
+    "numero": 10,
+    "nombre": "GruaM&C (5).jpeg",
+    "fecha": "2026-04-17"
+  },
+  {
+    "numero": 11,
+    "nombre": "GruaM&C (6).jpeg",
+    "fecha": "2026-04-17"
+
+  },
+  {
+    "numero": 12,
+    "nombre": "GruaM&C (7).jpeg",
+    "fecha": "2026-04-17"
+  },
+  {
+    "numero": 13,
+    "nombre": "GruaM&C (8).jpeg",
+    "fecha": "2026-04-17"
+  }
+
+  ]
+}

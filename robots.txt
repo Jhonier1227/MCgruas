@@ -1,0 +1,6 @@
+# Archivo basico para permitir rastreo completo del sitio.
+User-agent: *
+Allow: /
+
+# URL oficial del sitemap para buscadores.
+Sitemap: https://mycgruas.com/sitemap.xml

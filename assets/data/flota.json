@@ -1,0 +1,57 @@
+{
+  "_guia": "Actualiza 'empresa' con los datos oficiales del negocio y agrega cada nueva grua dentro de 'vehiculos' con nombre, tipo, imagen, alt, descripcion, uso, capacidad y disponibilidad.",
+  "empresa": {
+    "nombre": "M&C Grúas",
+    "nit": "1.130.664.917",
+    "operacion": "Cali, Bogotá y Pasto",
+    "cobertura": "Rutas Cali - Bogotá, Bogotá - Cali, Cali - Pasto y Pasto - Cali",
+    "correo": "gruamcgruas@gmail.com",
+    "telefonos": [
+      "317 713 7402",
+      "316 649 3568"
+    ],
+    "descripcion": "La flota respalda la operación de M&C Grúas para servicios urbanos, atención en carretera y recorridos programados entre Cali, Bogotá y Pasto."
+  },
+  "vehiculos": [
+    {
+      "nombre": "Plataforma para servicios urbanos",
+      "tipo": "Grúa planchón",
+      "imagen": "assets/img/GruaFondo.jpeg",
+      "alt": "Grúa de plataforma trasladando una camioneta",
+      "descripcion": "Unidad ideal para servicios urbanos, atención a vehículos averiados y traslados coordinados desde Cali.",
+      "uso": "Carros, camionetas y remolques livianos",
+      "capacidad": "Operación para vehículos particulares y comerciales livianos",
+      "disponibilidad": "Cali y salidas programadas"
+    },
+    {
+      "nombre": "Unidad para maquinaria pesada o liviana",
+      "tipo": "Transporte especializado",
+      "imagen": "assets/img/GruaFondo2.jpeg",
+      "alt": "Grúa transportando maquinaria agrícola",
+      "descripcion": "Preparada para traslados donde se requiere una plataforma estable y una coordinación más cuidadosa de la carga.",
+      "uso": "Maquinaria pesada o liviana, equipos y traslados especiales",
+      "capacidad": "Apoyo logístico para cargas con atención programada",
+      "disponibilidad": "Cali, Bogotá, Pasto y rutas definidas"
+    },
+    {
+      "nombre": "Atención en carretera",
+      "tipo": "Rutas principales",
+      "imagen": "assets/img/principalGrua.jpeg",
+      "alt": "Camiones de grúa listos para servicio en carretera",
+      "descripcion": "Pensada para respaldar servicios en carretera y solicitudes que requieren coordinación entre Cali, Bogotá y Pasto.",
+      "uso": "Asistencia vial y traslados entre ciudades",
+      "capacidad": "Respuesta para conductores, empresas y necesidades logísticas",
+      "disponibilidad": "Rutas Cali - Bogotá y Cali - Pasto"
+    },
+    {
+      "nombre": "Servicio de carga segura",
+      "tipo": "Operación técnica",
+      "imagen": "assets/ImgGruas/Grua (29).jpeg",
+      "alt": "Vehículo trasladado en una grúa de plataforma",
+      "descripcion": "Unidad preparada para respaldar servicios de traslado seguro y dar confianza a clientes nuevos y frecuentes.",
+      "uso": "Vehículos inmovilizados o traslados preventivos",
+      "capacidad": "Movilización segura según la novedad del cliente",
+      "disponibilidad": "Según agenda operativa y tipo de recorrido"
+    }
+  ]
+}
