@@ -1,14 +1,34 @@
+/*
+ * Archivo central de comportamiento del sitio.
+ *
+ * Este script se reutiliza en todas las paginas del proyecto. Por esa razon,
+ * cada funcion valida primero si los nodos necesarios existen antes de hacer
+ * cualquier cambio en pantalla. Asi evitamos errores cuando una pagina no
+ * tiene cierta seccion.
+ *
+ * Tambien soportamos JSON con una clave "_guia" para dejar instrucciones de
+ * mantenimiento dentro del mismo archivo. Esa guia es solo para lectura
+ * humana y nunca se renderiza en la pagina.
+ */
+
 document.addEventListener("DOMContentLoaded", () => {
+  // Interacciones compartidas por todas las paginas.
   setupMobileNav();
   setupAjaxForms();
+
+  // Bloques cargados desde JSON. Cada loader se activa solo si encuentra
+  // su contenedor en la pagina actual.
   loadGallery();
   loadFleetData();
   loadSocialData();
   loadRecentServicesGallery();
   loadTestimonialsData();
+
+  // Elementos pequenos que conviene mantener automaticos.
   updateCurrentYear();
 });
 
+// Cierra el menu movil despues de tocar un enlace para mejorar la navegacion.
 function setupMobileNav() {
   const navLinks = document.querySelectorAll(".nav-link");
   const navbarCollapse = document.querySelector(".navbar-collapse");
@@ -29,6 +49,7 @@ function setupMobileNav() {
   });
 }
 
+// Convierte formularios marcados con data-async-form en formularios asincronos.
 function setupAjaxForms() {
   const forms = document.querySelectorAll("form[data-async-form]");
 
@@ -48,6 +69,7 @@ function setupAjaxForms() {
       const formData = new FormData(form);
 
       if (submitButton) {
+        // Se bloquea el boton mientras se envia para evitar dobles clics.
         submitButton.disabled = true;
         submitButton.textContent = form.dataset.sendingText || "Enviando...";
       }
@@ -90,6 +112,7 @@ function setupAjaxForms() {
   });
 }
 
+// Muestra u oculta el mensaje de estado asociado a un formulario.
 function setFormMessage(element, statusClass, message) {
   element.className = "form-status";
 
@@ -104,6 +127,7 @@ function setFormMessage(element, statusClass, message) {
   element.textContent = message;
 }
 
+// Carga la galeria principal desde assets/data/galeria.json.
 async function loadGallery() {
   const inner = document.getElementById("galeriaCarouselInner");
   const indicators = document.getElementById("galeriaIndicadores");
@@ -116,9 +140,10 @@ async function loadGallery() {
   }
 
   try {
-    const galleryItems = await fetchJson("assets/data/galeria.json");
+    const galleryConfig = await fetchJson("assets/data/galeria.json");
+    const galleryItems = getConfigItems(galleryConfig);
 
-    if (!Array.isArray(galleryItems) || !galleryItems.length) {
+    if (!galleryItems.length) {
       throw new Error("La galería no tiene imágenes configuradas.");
     }
 
@@ -135,6 +160,7 @@ async function loadGallery() {
   }
 }
 
+// Construye la galeria completa: indicadores, slide principal y miniaturas.
 function renderGallery(items, elements) {
   const { inner, indicators, thumbnails, carouselElement } = elements;
 
@@ -143,6 +169,7 @@ function renderGallery(items, elements) {
   thumbnails.innerHTML = "";
 
   items.forEach((item, index) => {
+    // Indicador visual del carrusel.
     const indicator = document.createElement("button");
     indicator.type = "button";
     indicator.setAttribute("data-bs-target", "#carruselGaleria");
@@ -156,6 +183,7 @@ function renderGallery(items, elements) {
 
     indicators.appendChild(indicator);
 
+    // Slide principal con imagen y texto comercial.
     const carouselItem = document.createElement("div");
     carouselItem.className = `carousel-item gallery-slide${index === 0 ? " active" : ""}`;
     carouselItem.innerHTML = `
@@ -173,6 +201,7 @@ function renderGallery(items, elements) {
 
     inner.appendChild(carouselItem);
 
+    // Miniatura inferior sincronizada con el slide activo.
     const thumb = document.createElement("button");
     thumb.type = "button";
     thumb.className = `gallery-thumb${index === 0 ? " is-active" : ""}`;
@@ -191,6 +220,7 @@ function renderGallery(items, elements) {
   syncActiveThumbnail(0, thumbnails);
 }
 
+// Resalta la miniatura correspondiente al slide visible.
 function syncActiveThumbnail(activeIndex, thumbnailsContainer) {
   const thumbs = thumbnailsContainer.querySelectorAll(".gallery-thumb");
 
@@ -209,6 +239,7 @@ function syncActiveThumbnail(activeIndex, thumbnailsContainer) {
   });
 }
 
+// Carga la informacion institucional y de vehiculos desde flota.json.
 async function loadFleetData() {
   const companyPanel = document.getElementById("companyInfoPanel");
   const fleetGrid = document.getElementById("fleetGrid");
@@ -228,6 +259,7 @@ async function loadFleetData() {
   }
 }
 
+// Renderiza el panel superior con datos empresariales clave.
 function renderCompanyPanel(company, container) {
   const phones = Array.isArray(company.telefonos)
     ? company.telefonos
@@ -268,12 +300,13 @@ function renderCompanyPanel(company, container) {
   `;
 }
 
+// Renderiza cada unidad de la flota como una tarjeta independiente.
 function renderFleetCards(items, container) {
   if (!Array.isArray(items) || !items.length) {
     container.innerHTML = `
       <article class="empty-state-card">
         <h3>La flota aún no tiene registros visibles</h3>
-        <p>Agrega las grúas en <code>assets/data/flota.json</code> para publicarlas aquí.</p>
+        <p>Muy pronto estaremos publicando más unidades disponibles.</p>
       </article>
     `;
     return;
@@ -300,6 +333,7 @@ function renderFleetCards(items, container) {
     .join("");
 }
 
+// Carga las redes sociales visibles en redes.html.
 async function loadSocialData() {
   const channelsGrid = document.getElementById("socialChannelsGrid");
   const statusBox = document.getElementById("socialStatus");
@@ -317,12 +351,13 @@ async function loadSocialData() {
   }
 }
 
+// Renderiza los canales sociales principales con su CTA.
 function renderSocialChannels(items, container) {
   if (!Array.isArray(items) || !items.length) {
     container.innerHTML = `
       <article class="empty-state-card">
         <h3>No hay redes configuradas todavía</h3>
-        <p>Agrega los perfiles oficiales en <code>assets/data/redes.json</code>.</p>
+        <p>Muy pronto encontrarás aquí los perfiles oficiales de la marca.</p>
       </article>
     `;
     return;
@@ -355,12 +390,13 @@ function renderSocialChannels(items, container) {
     .join("");
 }
 
+// Funcion reservada para una futura seccion de publicaciones destacadas.
 function renderSocialHighlights(items, container) {
   if (!Array.isArray(items) || !items.length) {
     container.innerHTML = `
       <article class="empty-state-card">
         <h3>No hay publicaciones destacadas por ahora</h3>
-        <p>Puedes agregarlas desde <code>assets/data/redes.json</code> con imagen, descripción y enlace.</p>
+        <p>Pronto compartiremos aquí más contenido de la marca.</p>
       </article>
     `;
     return;
@@ -387,6 +423,7 @@ function renderSocialHighlights(items, container) {
     .join("");
 }
 
+// Carga la galeria de servicios recientes desde un JSON simple.
 async function loadRecentServicesGallery() {
   const grid = document.getElementById("recentServicesGrid");
   const statusBox = document.getElementById("recentServicesStatus");
@@ -396,7 +433,8 @@ async function loadRecentServicesGallery() {
   }
 
   try {
-    const items = await fetchJson("assets/data/servicios-recientes.json");
+    const recentServicesConfig = await fetchJson("assets/data/servicios-recientes.json");
+    const items = getConfigItems(recentServicesConfig);
     renderRecentServices(items, grid);
   } catch (error) {
     console.error(error);
@@ -404,12 +442,13 @@ async function loadRecentServicesGallery() {
   }
 }
 
+// Renderiza la galeria visual de fotos recientes sin texto encima.
 function renderRecentServices(items, container) {
   if (!Array.isArray(items) || !items.length) {
     container.innerHTML = `
       <article class="empty-state-card">
         <h3>No hay imágenes recientes publicadas</h3>
-        <p>Agrega imágenes en <code>assets/servicios-recientes/</code> y registros en <code>assets/data/servicios-recientes.json</code>.</p>
+        <p>Muy pronto encontrarás aquí nuevas evidencias del servicio.</p>
       </article>
     `;
     return;
@@ -430,6 +469,7 @@ function renderRecentServices(items, container) {
     .join("");
 }
 
+// Carga el resumen y los testimonios visibles en experiencia.html.
 async function loadTestimonialsData() {
   const summaryBox = document.getElementById("testimonialSummary");
   const testimonialGrid = document.getElementById("testimonialGrid");
@@ -449,6 +489,7 @@ async function loadTestimonialsData() {
   }
 }
 
+// Renderiza el bloque superior de contexto de la pagina de experiencia.
 function renderTestimonialSummary(summary, container) {
   container.innerHTML = `
     <article class="summary-card">
@@ -473,12 +514,13 @@ function renderTestimonialSummary(summary, container) {
   `;
 }
 
+// Renderiza los testimonios aprobados por la empresa.
 function renderTestimonials(items, container) {
   if (!Array.isArray(items) || !items.length) {
     container.innerHTML = `
       <article class="empty-state-card">
         <h3>Aún no hay opiniones publicadas</h3>
-        <p>La estructura ya está lista. Cuando apruebes comentarios de clientes, podrás agregarlos en <code>assets/data/testimonios.json</code>.</p>
+        <p>Cuando recibamos comentarios autorizados, los compartiremos en este espacio.</p>
       </article>
     `;
     return;
@@ -489,8 +531,8 @@ function renderTestimonials(items, container) {
       (item) => `
         <article class="testimonial-card">
           <div class="rating-stars">${renderStars(item.calificacion)}</div>
-          <h3>${item.nombre}${item.empresa ? ` · ${item.empresa}` : ""}</h3>
-          <span class="testimonial-city">${item.ciudad} · ${item.servicio}</span>
+          <h3>${item.nombre}${item.empresa ? ` - ${item.empresa}` : ""}</h3>
+          <span class="testimonial-city">${item.ciudad} - ${item.servicio}</span>
           <p>${item.comentario}</p>
         </article>
       `
@@ -498,6 +540,7 @@ function renderTestimonials(items, container) {
     .join("");
 }
 
+// Genera las estrellas visibles a partir de un valor entre 1 y 5.
 function renderStars(value) {
   const stars = [];
 
@@ -508,11 +551,13 @@ function renderStars(value) {
   return stars.join("");
 }
 
+// Muestra mensajes simples de error o estado para bloques dinamicos.
 function showDataStatus(element, message) {
   element.textContent = message;
   element.classList.remove("d-none");
 }
 
+// Hace fetch del JSON y devuelve el contenido parseado o lanza error.
 async function fetchJson(path) {
   const response = await fetch(path);
 
@@ -523,6 +568,20 @@ async function fetchJson(path) {
   return response.json();
 }
 
+// Extrae la coleccion real cuando un JSON viene como objeto con "items".
+function getConfigItems(config, key = "items") {
+  if (Array.isArray(config)) {
+    return config;
+  }
+
+  if (config && Array.isArray(config[key])) {
+    return config[key];
+  }
+
+  return [];
+}
+
+// Actualiza automaticamente el anio del footer en todas las paginas.
 function updateCurrentYear() {
   const yearNodes = document.querySelectorAll("[data-current-year], #currentYear");
 
@@ -531,6 +590,7 @@ function updateCurrentYear() {
   });
 }
 
+// Queda lista para reutilizarse si en el futuro se vuelve a mostrar fecha.
 function formatDate(value) {
   const parsedDate = new Date(`${value}T00:00:00`);
 

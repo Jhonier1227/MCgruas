@@ -1,4 +1,5 @@
 {
+  "_guia": "Para publicar una opinion nueva, agrega un objeto dentro de 'testimonios' con nombre, empresa, ciudad, servicio, calificacion y comentario. Publica solo testimonios aprobados o autorizados por el cliente.",
   "resumen": {
     "titulo": "Escuchamos cada servicio para seguir mejorando",
     "descripcion": "La idea de esta página es recoger opiniones, detectar oportunidades de mejora y publicar únicamente los comentarios aprobados por la empresa o autorizados por el cliente.",
@@ -6,14 +7,5 @@
     "moderacion": "Manual",
     "privacidad": "Nombre o empresa con autorización"
   },
-  "testimonios": [
-    {
-  "nombre": "Carlos M.",
-  "empresa": "Transportes XYZ",
-  "ciudad": "Cali",
-  "servicio": "Grúa urbana",
-  "calificacion": 5,
-  "comentario": "El servicio llegó rápido y el traslado fue muy seguro."
-}
-  ]
+  "testimonios": []
 }

@@ -1,10 +1,18 @@
+/* =========================================
+   Ajustes responsive
+   1199px: compacta bloques amplios
+   991px: cambia a layout tablet
+   767px: prioriza movil
+   ========================================= */
 @media (max-width: 1199px) {
+  /* Reduce columnas grandes cuando el ancho ya no alcanza para tres bloques. */
   .hero-info-grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 991px) {
+  /* Punto de quiebre tablet: el header y varias rejillas pasan a una columna. */
   .site-header .navbar {
     padding: 0.8rem 0;
   }
@@ -80,6 +88,7 @@
 }
 
 @media (max-width: 767px) {
+  /* Punto de quiebre movil: se optimiza la experiencia para una sola mano. */
   body {
     padding-bottom: calc(5.8rem + env(safe-area-inset-bottom));
   }
@@ -323,6 +332,30 @@
   .embed-shell {
     padding: 1.1rem;
     border-radius: 20px;
+  }
+
+  .social-image-card {
+    padding: 0;
+  }
+
+  .social-feature-image {
+    height: 210px;
+  }
+
+  .social-image-card > .section-tag,
+  .social-image-card > h2,
+  .social-image-card > .helper-text,
+  .social-image-card > .feedback-note-list {
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+  }
+
+  .social-image-card > .section-tag {
+    margin-top: 1.1rem;
+  }
+
+  .social-image-card > .feedback-note-list {
+    margin-bottom: 1.1rem;
   }
 
   .subpage-section {

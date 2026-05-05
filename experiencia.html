@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Configuracion SEO y recursos compartidos para la pagina de experiencia -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Experiencia del Cliente | M&C Grúas</title>
   <meta
     name="description"
-    content="Página de experiencia del cliente para opiniones aprobadas, satisfacción del servicio y sugerencias de mejora en M&C Grúas."
+    content="Página de experiencia del cliente para calificar el servicio, compartir sugerencias y publicar opiniones autorizadas sobre M&C Grúas."
   />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://mycgruas.com/experiencia.html" />
@@ -23,6 +24,7 @@
   <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 <body>
+  <!-- Header fijo reutilizado en todas las paginas internas -->
   <header class="site-header fixed-top">
     <nav class="navbar navbar-expand-xl navbar-dark">
       <div class="container">
@@ -62,103 +64,35 @@
   </header>
 
   <main>
+    <!-- Hero principal de la seccion de experiencia -->
     <section class="page-hero">
       <div class="container">
-        <span class="section-tag">experiencia.html</span>
+        <span class="section-tag">Experiencia del cliente</span>
         <h1>Opiniones, satisfacción del servicio y sugerencias de mejora</h1>
         <p>
-          Esta página convierte la web en un punto de escucha activa. Aquí podrás recoger comentarios, publicar
-          opiniones aprobadas y revisar oportunidades reales para mejorar la atención del servicio.
+          Este espacio permite que cada cliente califique la atención recibida y comparta sugerencias para seguir
+          fortaleciendo el servicio de M&C Grúas.
         </p>
         <div class="page-kicker-row">
-          <span><i class="bi bi-chat-dots"></i> Opiniones aprobadas</span>
+          <span><i class="bi bi-chat-dots"></i> Opiniones autorizadas</span>
           <span><i class="bi bi-stars"></i> Satisfacción del cliente</span>
-          <span><i class="bi bi-lightbulb"></i> Sugerencias de mejora</span>
+          <span><i class="bi bi-shield-check"></i> Datos protegidos</span>
         </div>
       </div>
     </section>
 
-    <section class="subpage-section">
-      <div class="container">
-        <div class="row g-4 align-items-stretch">
-          <div class="col-lg-7">
-            <div id="testimonialSummary"></div>
-          </div>
-          <div class="col-lg-5">
-            <div class="feedback-card h-100">
-              <span class="section-tag section-tag-dark">Publicación responsable</span>
-              <h2>Cómo funciona este apartado</h2>
-
-              <div class="feedback-note-list">
-                <article class="feedback-note">
-                  <strong>Comentarios internos</strong>
-                  <p>Todo lo que llegue por el formulario sirve para entender mejor la experiencia del cliente.</p>
-                </article>
-                <article class="feedback-note">
-                  <strong>Opiniones públicas</strong>
-                  <p>Solo se muestran en la página los testimonios que tú apruebes o que el cliente autorice publicar.</p>
-                </article>
-                <article class="feedback-note">
-                  <strong>Privacidad</strong>
-                  <p>La idea es mostrar solo nombre, empresa o ciudad, sin publicar datos sensibles del cliente.</p>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="subpage-section section-light-alt">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-tag">Opiniones publicadas</span>
-          <h2>Espacio listo para mostrar testimonios aprobados</h2>
-          <p>
-            Por ahora no inventamos opiniones. Cuando tengas comentarios reales, podrás agregarlos al archivo
-            <code>assets/data/testimonios.json</code> y aparecerán aquí automáticamente.
-          </p>
-        </div>
-
-        <div id="testimonialStatus" class="data-status d-none" role="status"></div>
-        <div id="testimonialGrid" class="testimonial-grid"></div>
-      </div>
-    </section>
-
+    <!-- Encuesta de satisfaccion para clientes -->
     <section class="subpage-section">
       <div class="container">
         <div class="section-heading">
           <span class="section-tag">Encuesta de satisfacción</span>
-          <h2>Permite que el cliente califique el servicio y deje sugerencias de mejora</h2>
+          <h2>Califica el servicio y comparte tus sugerencias</h2>
           <p>
-            Este formulario queda listo para recibir opiniones. Puedes usarlo para medir calidad del servicio, detectar
-            fallas repetidas y construir más adelante un historial de testimonios reales.
+            Tu opinión nos ayuda a mejorar la atención, la comunicación y la seguridad de cada traslado.
           </p>
         </div>
 
-        <div class="feedback-grid">
-          <div class="feedback-card">
-            <span class="section-tag section-tag-dark">Qué conviene preguntar</span>
-            <div class="feedback-note-list">
-              <article class="feedback-note">
-                <strong>Calificación general</strong>
-                <p>Sirve para identificar si el cliente quedó satisfecho con la rapidez, el trato y la solución.</p>
-              </article>
-              <article class="feedback-note">
-                <strong>Comentario libre</strong>
-                <p>Ayuda a encontrar detalles que no aparecen en una calificación numérica.</p>
-              </article>
-              <article class="feedback-note">
-                <strong>Sugerencia de mejora</strong>
-                <p>Te permite detectar cambios prácticos que podrían fortalecer el servicio o la comunicación.</p>
-              </article>
-              <article class="feedback-note">
-                <strong>Autorización para publicar</strong>
-                <p>Si el cliente lo permite, luego puedes mover su opinión aprobada al JSON de testimonios.</p>
-              </article>
-            </div>
-          </div>
-
+        <div class="feedback-grid feedback-grid-form-first">
           <div class="feedback-card">
             <form
               id="formularioExperiencia"
@@ -246,19 +180,89 @@
               </div>
 
               <p class="privacy-note mt-3 mb-0">
-                La información sensible no se publica automáticamente. Esta página está pensada para moderar y aprobar
-                comentarios antes de hacerlos visibles.
+                La información enviada será revisada y resguardada por M&C Grúas. Ningún dato sensible se publica automáticamente.
               </p>
 
               <button type="submit" class="btn btn-warning btn-lg w-100 mt-4">Enviar opinión</button>
               <div id="mensajeExperiencia" class="form-status d-none" role="alert"></div>
             </form>
           </div>
+
+          <div class="feedback-card">
+            <span class="section-tag section-tag-dark">Tu experiencia importa</span>
+            <div class="feedback-note-list">
+              <article class="feedback-note">
+                <strong>Calificación general</strong>
+                <p>Nos permite medir rapidez, trato, comunicación y solución del servicio recibido.</p>
+              </article>
+              <article class="feedback-note">
+                <strong>Comentario libre</strong>
+                <p>Ayuda a conocer detalles importantes de la atención que pueden fortalecer el servicio.</p>
+              </article>
+              <article class="feedback-note">
+                <strong>Sugerencia de mejora</strong>
+                <p>Sirve para identificar oportunidades reales en tiempos de respuesta, coordinación y acompañamiento.</p>
+              </article>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Privacidad y seguridad de las opiniones recibidas -->
+    <section class="subpage-section section-light-alt">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7">
+            <div id="testimonialSummary"></div>
+          </div>
+          <div class="col-lg-5">
+            <div class="feedback-card h-100">
+              <span class="section-tag section-tag-dark">Privacidad y seguridad</span>
+              <h2>Tus opiniones se manejan con cuidado</h2>
+              <p class="helper-text">
+                La información enviada por los clientes queda resguardada por M&C Grúas y se utiliza para mejorar
+                el servicio, revisar sugerencias y dar seguimiento cuando sea necesario.
+              </p>
+
+              <div class="feedback-note-list">
+                <article class="feedback-note">
+                  <strong>Uso exclusivo de la empresa</strong>
+                  <p>Las respuestas son revisadas por la empresa para mejorar la atención y la coordinación del servicio.</p>
+                </article>
+                <article class="feedback-note">
+                  <strong>Datos protegidos</strong>
+                  <p>No se publican teléfonos, correos, ubicaciones exactas ni información sensible del cliente.</p>
+                </article>
+                <article class="feedback-note">
+                  <strong>Publicación con autorización</strong>
+                  <p>Solo se muestra una opinión en la página cuando el cliente autoriza compartirla como testimonio.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios visibles para clientes y visitantes -->
+    <section class="subpage-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Opiniones publicadas</span>
+          <h2>Opiniones de clientes sobre el servicio recibido</h2>
+          <p>
+            Aquí compartimos comentarios autorizados por clientes que desean dar su opinión sobre la atención recibida.
+          </p>
+        </div>
+
+        <div id="testimonialStatus" class="data-status d-none" role="status"></div>
+        <div id="testimonialGrid" class="testimonial-grid"></div>
       </div>
     </section>
   </main>
 
+  <!-- Footer comun del sitio -->
   <footer class="site-footer">
     <div class="container">
       <div class="row g-4 align-items-start">
@@ -267,7 +271,7 @@
             <img src="assets/img/LogoGrua1.png" alt="Logo M&C Grúas" class="footer-logo" />
             <div>
               <h2>M&C Grúas</h2>
-              <p>Servicio de grúas 24 horas en Cali con cobertura en toda Colombia.</p>
+              <p>Servicio de grúas 24 horas con atención en Cali, Bogotá y Pasto.</p>
             </div>
           </div>
         </div>
@@ -298,11 +302,12 @@
 
       <div class="footer-bottom">
         <p>&copy; <span data-current-year></span> M&C Grúas. Todos los derechos reservados.</p>
-        <p>Atención principal en Cali | Cobertura nacional en Colombia</p>
+        <p>Rutas principales Cali - Bogotá | Cali - Pasto</p>
       </div>
     </div>
   </footer>
 
+  <!-- CTA flotante para contacto rapido desde celular -->
   <div class="floating-cta" aria-label="Acciones rápidas">
     <a href="tel:+573177137402" class="floating-call">
       <i class="bi bi-telephone-fill"></i>
@@ -319,6 +324,7 @@
     </a>
   </div>
 
+  <!-- scripts.js maneja la carga de testimonios y el envio asincrono del formulario -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/scripts.js"></script>
 </body>

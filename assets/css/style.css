@@ -1,3 +1,6 @@
+/* =======================
+   Variables y base global
+   ======================= */
 :root {
   --color-bg: #0b1220;
   --color-surface: #111b30;
@@ -50,6 +53,9 @@ main section {
   scroll-margin-top: 108px;
 }
 
+/* =======================
+   Header y navegacion
+   ======================= */
 .site-header .navbar {
   padding: 1rem 0;
   background: rgba(7, 15, 29, 0.82);
@@ -115,6 +121,9 @@ h3,
   transform: translateY(-1px);
 }
 
+/* =======================
+   Hero principal (home)
+   ======================= */
 .hero-section {
   position: relative;
   min-height: 100vh;
@@ -309,6 +318,9 @@ h3,
   color: rgba(255, 255, 255, 0.82);
 }
 
+/* =======================
+   Secciones generales
+   ======================= */
 .content-section {
   padding: 6rem 0;
 }
@@ -402,6 +414,9 @@ h3,
   color: var(--color-text-soft);
 }
 
+/* =======================
+   Cobertura, proceso y FAQ
+   ======================= */
 .coverage-list {
   display: grid;
   gap: 1rem;
@@ -521,6 +536,9 @@ h3,
   box-shadow: 0 0 0 0.2rem rgba(245, 178, 25, 0.22);
 }
 
+/* =======================
+   Galeria principal y contacto
+   ======================= */
 .gallery-shell {
   padding: 1.4rem;
   border: 1px solid rgba(15, 27, 48, 0.08);
@@ -776,6 +794,9 @@ h3,
   color: #982626;
 }
 
+/* =======================
+   Paginas internas y layout auxiliar
+   ======================= */
 .page-hero {
   position: relative;
   padding: 8.7rem 0 3.4rem;
@@ -938,6 +959,10 @@ h3,
   padding-left: 1.1rem;
 }
 
+/* =======================
+   Componentes cargados desde JSON
+   flota, redes, resumenes y estados
+   ======================= */
 .fleet-grid,
 .social-grid,
 .highlights-grid,
@@ -1131,6 +1156,34 @@ h3,
   margin-bottom: 0.8rem;
 }
 
+.social-image-card {
+  overflow: hidden;
+  padding: 0;
+}
+
+.social-feature-image {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.social-image-card > .section-tag,
+.social-image-card > h2,
+.social-image-card > .helper-text,
+.social-image-card > .feedback-note-list {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.social-image-card > .section-tag {
+  margin-top: 1.5rem;
+}
+
+.social-image-card > .feedback-note-list {
+  margin-bottom: 1.5rem;
+}
+
 .embed-shell {
   padding: 1.2rem;
   border-radius: var(--radius-lg);
@@ -1143,6 +1196,9 @@ h3,
   margin: 0 auto;
 }
 
+/* =======================
+   Galeria de servicios recientes
+   ======================= */
 .recent-gallery-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1192,6 +1248,8 @@ h3,
 }
 
 .recent-gallery-media::before {
+  /* Este pseudo-elemento crea un fondo difuminado para rellenar
+     el marco horizontal cuando la foto original no ocupa todo el ancho. */
   background-image: var(--recent-service-bg);
   background-size: cover;
   background-position: center;
@@ -1213,10 +1271,18 @@ h3,
   padding: 0.7rem;
 }
 
+/* =======================
+   Encuesta y tarjetas de apoyo
+   ======================= */
 .feedback-grid {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
   gap: 1.3rem;
+}
+
+.feedback-grid-form-first {
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: start;
 }
 
 .feedback-note-list {
@@ -1295,6 +1361,9 @@ h3,
   font-weight: 700;
 }
 
+/* =======================
+   Footer y acciones flotantes
+   ======================= */
 .site-footer {
   padding: 3rem 0 2rem;
   background: #050914;

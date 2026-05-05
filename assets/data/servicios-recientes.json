@@ -1,4 +1,6 @@
-[
+{
+  "_guia": "Para agregar una imagen reciente: sube el archivo a assets/servicios-recientes/ y registra un nuevo objeto dentro de 'items' con numero, nombre y fecha. Para borrar una imagen, elimina el archivo y su registro.",
+  "items": [
   {
     "numero": 1,
     "nombre": "servicio-001.jpeg",
@@ -67,4 +69,5 @@
     "fecha": "2026-04-17"
   }
 
-]
+  ]
+}

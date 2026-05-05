@@ -1,4 +1,6 @@
-[
+{
+  "_guia": "Para agregar una imagen a la galeria principal: sube la foto a assets/ImgGruas/ y agrega un nuevo objeto dentro de 'items' con src, alt, titulo, descripcion y categoria.",
+  "items": [
   {
     "src": "assets/ImgGruas/Grua (1).jpeg",
     "alt": "Servicio de grúa urbana para vehículo en Cali",
@@ -51,9 +53,9 @@
   {
     "src": "assets/ImgGruas/Grua (8).jpeg",
     "alt": "Grúa realizando transporte de vehículo fuera de la ciudad",
-    "titulo": "Traslados entre municipios",
-    "descripcion": "Coordinamos recorridos desde Cali hacia otros municipios según la necesidad del cliente.",
-    "categoria": "Cobertura regional"
+    "titulo": "Traslados programados entre ciudades",
+    "descripcion": "Coordinamos recorridos entre Cali, Bogotá y Pasto según la necesidad del cliente.",
+    "categoria": "Rutas principales"
   },
   {
     "src": "assets/ImgGruas/Grua (9).jpeg",
@@ -113,10 +115,10 @@
   },
   {
     "src": "assets/ImgGruas/Grua (17).jpeg",
-    "alt": "Servicio profesional de grúa en carretera nacional",
-    "titulo": "Cobertura en rutas nacionales",
-    "descripcion": "También se manejan coordinaciones para servicios fuera del área urbana principal.",
-    "categoria": "Cobertura nacional"
+    "alt": "Servicio profesional de grúa en carretera entre ciudades",
+    "titulo": "Cobertura en rutas principales",
+    "descripcion": "Se coordinan servicios en carretera entre Cali, Bogotá y Pasto con apoyo logístico y atención segura.",
+    "categoria": "Rutas en carretera"
   },
   {
     "src": "assets/ImgGruas/Grua (18).jpeg",
@@ -149,8 +151,8 @@
   {
     "src": "assets/ImgGruas/Grua (23).jpeg",
     "alt": "Transporte de maquinaria con grúa",
-    "titulo": "Transporte de maquinaria liviana",
-    "descripcion": "Una alternativa práctica para equipos y maquinaria que necesitan movilización segura.",
+      "titulo": "Transporte de maquinaria pesada o liviana",
+      "descripcion": "Una alternativa práctica para equipos y maquinaria que necesitan movilización segura según disponibilidad operativa.",
     "categoria": "Maquinaria"
   },
   {
@@ -184,9 +186,9 @@
   {
     "src": "assets/ImgGruas/Grua (28).jpeg",
     "alt": "Grúa en servicio regional fuera de Cali",
-    "titulo": "Atención en corredores regionales",
-    "descripcion": "Una muestra de los servicios que pueden extenderse más allá del núcleo urbano principal.",
-    "categoria": "Valle del Cauca"
+    "titulo": "Atención en corredores entre ciudades",
+    "descripcion": "Una muestra de los servicios coordinados entre Cali, Bogotá y Pasto según disponibilidad operativa.",
+    "categoria": "Corredores viales"
   },
   {
     "src": "assets/ImgGruas/Grua (29).jpeg",
@@ -199,14 +201,15 @@
     "src": "assets/ImgGruas/Grua (30).jpeg",
     "alt": "Camión de grúa listo para atender servicio",
     "titulo": "Disponibilidad para nuevos servicios",
-    "descripcion": "La galería puede crecer fácilmente agregando nuevas fotos al JSON y a la carpeta correspondiente.",
+    "descripcion": "Una muestra del respaldo operativo disponible para nuevos servicios y traslados programados.",
     "categoria": "Flota"
   },
   {
     "src": "assets/ImgGruas/Grua (31).jpeg",
-    "alt": "Servicio de grúa con cobertura nacional en Colombia",
-    "titulo": "Cobertura en distintas zonas del país",
-    "descripcion": "Cali es la base principal, pero el mensaje comercial deja claro el alcance de servicio en Colombia.",
-    "categoria": "Colombia"
+    "alt": "Servicio de grúa con cobertura entre Cali, Bogotá y Pasto",
+    "titulo": "Servicio entre ciudades principales",
+    "descripcion": "Cali es la base principal y el servicio también cubre recorridos hacia Bogotá y Pasto.",
+    "categoria": "Cali - Bogotá - Pasto"
   }
-]
+  ]
+}

@@ -1,8 +1,9 @@
 {
+  "_guia": "Edita 'canales' para actualizar enlaces o handles oficiales. Si luego quieres mostrar publicaciones destacadas, usa la coleccion 'destacados' con titulo, descripcion, thumbnail, alt, url y tipo.",
   "canales": [
     {
       "plataforma": "TikTok",
-      "handle": "@mycgruas",
+      "handle": "@mcgruas7",
       "url": "https://www.tiktok.com/@mcgruas7?_r=1&_t=ZS-95cEvTLTXd9",
       "cta": "Ir a TikTok",
       "descripcion": "Ideal para publicar videos cortos de servicios, maniobras, recomendaciones y atención en carretera.",

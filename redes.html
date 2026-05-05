@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Configuracion SEO y recursos compartidos para la pagina de redes -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Redes Sociales | M&C Grúas</title>
   <meta
     name="description"
-    content="Espacio de redes sociales de M&C Grúas para mostrar TikTok, Instagram, Facebook y contenidos destacados."
+    content="Redes sociales de M&C Grúas para mostrar TikTok, Instagram, Facebook y evidencia visual de los servicios entre Cali, Bogotá y Pasto."
   />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://mycgruas.com/redes.html" />
@@ -23,6 +24,7 @@
   <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 <body>
+  <!-- Header fijo reutilizado en todas las paginas internas -->
   <header class="site-header fixed-top">
     <nav class="navbar navbar-expand-xl navbar-dark">
       <div class="container">
@@ -62,13 +64,14 @@
   </header>
 
   <main>
+    <!-- Hero principal de la seccion de redes -->
     <section class="page-hero">
       <div class="container">
-        <span class="section-tag">redes.html</span>
+        <span class="section-tag">Redes sociales</span>
         <h1>Una página para la presencia social y el contenido de la marca</h1>
         <p>
-          Esta sección sirve para reunir TikTok, Instagram y Facebook en un solo lugar, mostrar contenido destacado
-          y darle a la marca una sensación más activa y cercana al público.
+          Aquí reunimos TikTok, Instagram y Facebook para mostrar evidencia real del servicio, trabajos recientes
+          y la actividad diaria de la marca.
         </p>
         <div class="page-kicker-row">
           <span><i class="bi bi-music-note-beamed"></i> TikTok y video corto</span>
@@ -78,14 +81,15 @@
       </div>
     </section>
 
+    <!-- Tarjetas con los canales sociales de la marca -->
     <section class="subpage-section">
       <div class="container">
         <div class="section-heading">
           <span class="section-tag">Canales sociales</span>
           <h2>Perfiles que ayudan a mostrar evidencia real del trabajo</h2>
           <p>
-            Puedes usar esta página para dirigir tráfico a los perfiles activos, subir más confianza y mostrar videos
-            reales del servicio. Si un enlace aún no está listo, se deja la estructura preparada para agregarlo luego.
+            Sigue los perfiles oficiales de la empresa para conocer servicios reales, novedades y contenido visual
+            de las rutas y atenciones más recientes.
           </p>
         </div>
 
@@ -94,16 +98,16 @@
       </div>
     </section>
 
+    <!-- Bloque visual para integrar TikTok dentro del sitio -->
     <section class="subpage-section">
       <div class="container">
         <div class="row g-4 align-items-start">
           <div class="col-lg-7">
             <div class="section-heading mb-4">
               <span class="section-tag">TikTok oficial</span>
-              <h2>Perfil embebido con videos recientes del canal</h2>
+              <h2>Videos recientes del canal oficial</h2>
               <p>
-                Aquí queda conectado el perfil oficial de TikTok para que la página de redes también muestre el
-                contenido en formato visual y no solo como enlaces externos.
+                Mira algunos servicios publicados por la marca y conoce de cerca el trabajo que realizamos en carretera.
               </p>
             </div>
 
@@ -123,21 +127,30 @@
           </div>
 
           <div class="col-lg-5">
-            <div class="feedback-card">
-              <span class="section-tag section-tag-dark">Qué aporta este bloque</span>
-              <h2>TikTok visible dentro del sitio</h2>
+            <div class="feedback-card social-image-card">
+              <img
+                src="assets/img/principalGrua.jpeg"
+                alt="Grúas de M&C Grúas listas para atención en carretera"
+                class="social-feature-image"
+              />
+              <span class="section-tag section-tag-dark">Servicio en acción</span>
+              <h2>Contenido real para conocer cómo trabajamos</h2>
+              <p class="helper-text">
+                En nuestras redes compartimos servicios, recorridos y evidencias de atención para que cada cliente
+                pueda conocer mejor el respaldo de M&C Grúas antes de solicitar una grúa.
+              </p>
               <div class="feedback-note-list">
                 <article class="feedback-note">
-                  <strong>Más prueba social</strong>
-                  <p>Los visitantes ven que la marca está activa y que publica contenido real del servicio.</p>
+                  <strong>Servicios reales</strong>
+                  <p>Publicamos registros visuales de traslados, cargues y atención en carretera.</p>
                 </article>
                 <article class="feedback-note">
-                  <strong>Videos recientes</strong>
-                  <p>El embed oficial de TikTok puede mostrar el perfil y una selección de videos recientes.</p>
+                  <strong>Rutas principales</strong>
+                  <p>Compartimos contenido relacionado con Cali, Bogotá, Pasto y los recorridos entre estas ciudades.</p>
                 </article>
                 <article class="feedback-note">
-                  <strong>Mejor conexión con el público</strong>
-                  <p>Esto ayuda a que la web se sienta más viva y cercana para clientes nuevos.</p>
+                  <strong>Contacto rápido</strong>
+                  <p>Desde los perfiles oficiales también puedes escribirnos para coordinar tu servicio.</p>
                 </article>
               </div>
             </div>
@@ -146,47 +159,21 @@
       </div>
     </section>
 
+    <!-- Galeria de servicios recientes -->
     <section class="subpage-section section-light-alt">
       <div class="container">
-        <div class="row g-4 align-items-start">
-          <div class="col-12">
-            <div class="section-heading mb-4">
-              <span class="section-tag">Servicios recientes</span>
-              <h2>Galería visual para mostrar las imágenes más recientes del servicio</h2>
-              <p>
-                Esta galería se administra desde una carpeta exclusiva y un JSON muy simple. Solo agregas o borras
-                imágenes en <code>assets/servicios-recientes/</code> y registras <code>número</code>,
-                <code>nombre</code> y <code>fecha</code> en el JSON.
-              </p>
-            </div>
-            <div id="recentServicesStatus" class="data-status d-none" role="status"></div>
-            <div id="recentServicesGrid" class="recent-gallery-grid"></div>
-          </div>
-          <div class="col-12">
-            <div class="feedback-card gallery-helper-card">
-              <span class="section-tag section-tag-dark">Cómo mantener esta galería</span>
-              <h2>Flujo simple para subir imágenes nuevas</h2>
-              <div class="feedback-note-list gallery-helper-list">
-                <article class="feedback-note">
-                  <strong>1. Sube la imagen</strong>
-                  <p>Guarda la foto nueva dentro de <code>assets/servicios-recientes/</code>.</p>
-                </article>
-                <article class="feedback-note">
-                  <strong>2. Registra el JSON</strong>
-                  <p>En el archivo nuevo solo colocas número, nombre del archivo y fecha del servicio.</p>
-                </article>
-                <article class="feedback-note">
-                  <strong>3. Borra o reemplaza fácil</strong>
-                  <p>Si una imagen ya no se usará, la eliminas de la carpeta y del JSON sin tocar el HTML.</p>
-                </article>
-              </div>
-            </div>
-          </div>
+        <div class="section-heading mb-4">
+          <span class="section-tag">Servicios recientes</span>
+          <h2>Galería visual con algunos trabajos recientes</h2>
+          <p>Una muestra visual de servicios recientes realizados por M&C Grúas en distintos recorridos y atenciones.</p>
         </div>
+        <div id="recentServicesStatus" class="data-status d-none" role="status"></div>
+        <div id="recentServicesGrid" class="recent-gallery-grid"></div>
       </div>
     </section>
   </main>
 
+  <!-- Footer comun del sitio -->
   <footer class="site-footer">
     <div class="container">
       <div class="row g-4 align-items-start">
@@ -195,7 +182,7 @@
             <img src="assets/img/LogoGrua1.png" alt="Logo M&C Grúas" class="footer-logo" />
             <div>
               <h2>M&C Grúas</h2>
-              <p>Servicio de grúas 24 horas en Cali con cobertura en toda Colombia.</p>
+              <p>Servicio de grúas 24 horas con atención en Cali, Bogotá y Pasto.</p>
             </div>
           </div>
         </div>
@@ -226,11 +213,12 @@
 
       <div class="footer-bottom">
         <p>&copy; <span data-current-year></span> M&C Grúas. Todos los derechos reservados.</p>
-        <p>Atención principal en Cali | Cobertura nacional en Colombia</p>
+        <p>Rutas principales Cali - Bogotá | Cali - Pasto</p>
       </div>
     </div>
   </footer>
 
+  <!-- CTA flotante para contacto rapido desde celular -->
   <div class="floating-cta" aria-label="Acciones rápidas">
     <a href="tel:+573177137402" class="floating-call">
       <i class="bi bi-telephone-fill"></i>
@@ -247,6 +235,7 @@
     </a>
   </div>
 
+  <!-- El embed de TikTok se apoya en el script oficial de la plataforma -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script async src="https://www.tiktok.com/embed.js"></script>
