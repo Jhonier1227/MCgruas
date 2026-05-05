@@ -67,6 +67,20 @@
     max-width: none;
   }
 
+  .page-hero-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .page-hero-media {
+    justify-self: start;
+    width: min(100%, 430px);
+  }
+
+  .page-hero-media img {
+    aspect-ratio: 16 / 10;
+  }
+
   .hero-panel {
     margin-top: 0.5rem;
   }
@@ -142,6 +156,18 @@
 
   .page-hero p {
     font-size: 1rem;
+  }
+
+  .page-hero-layout {
+    gap: 1.2rem;
+  }
+
+  .page-hero-media {
+    width: 100%;
+  }
+
+  .page-hero-media img {
+    border-radius: 22px;
   }
 
   .page-kicker-row {

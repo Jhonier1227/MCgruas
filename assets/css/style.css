@@ -66,11 +66,11 @@ main section {
 .logo-img {
   width: 60px;
   height: 60px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 0.35rem;
+  padding: 0.2rem;
 }
 
 .brand-copy {
@@ -820,17 +820,42 @@ h3,
   position: relative;
 }
 
+.page-hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.75fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.page-hero-copy {
+  min-width: 0;
+}
+
 .page-hero h1 {
   font-size: clamp(2.4rem, 5vw, 4.4rem);
   line-height: 1;
   margin-bottom: 1rem;
-  max-width: 13ch;
+  max-width: 16ch;
 }
 
 .page-hero p {
   max-width: 64ch;
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.08rem;
+}
+
+.page-hero-media {
+  justify-self: end;
+  width: min(100%, 430px);
+}
+
+.page-hero-media img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: var(--shadow-strong);
 }
 
 .page-kicker-row {
@@ -1382,7 +1407,7 @@ h3,
   object-fit: contain;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.08);
-  padding: 0.45rem;
+  padding: 0.25rem;
 }
 
 .footer-brand h2 {
