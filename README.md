@@ -1,128 +1,88 @@
-# M&C Grúas - Sitio web oficial
+# M&C Grúas
 
-Sitio web comercial para `M&C Grúas`, enfocado en captar servicios de grúa en `Cali`, reforzar el mensaje de cobertura nacional y abrir nuevos espacios de confianza e interacción con clientes.
+![M&C Grúas](assets/img/Logo_Nuevo_mcgrua.png)
 
-## Páginas actuales
+Sitio web oficial de `M&C Grúas`, creado para presentar el servicio de grúas, recibir solicitudes de contacto y mostrar confianza comercial mediante flota, redes sociales, galería de servicios y opiniones autorizadas.
 
-- `index.html`: landing principal con enfoque en conversión rápida.
-- `flota.html`: página de flota e información empresarial.
-- `redes.html`: página para redes sociales y contenidos destacados.
-- `experiencia.html`: espacio para satisfacción del servicio, sugerencias y testimonios aprobados.
+El sitio está enfocado en atención desde `Cali` y rutas principales:
 
-## Estructura de archivos clave
+`Cali - Bogotá` | `Bogotá - Cali` | `Cali - Pasto` | `Pasto - Cali`
 
-- `assets/css/style.css`: estilos base del sitio.
-- `assets/css/responsive.css`: ajustes de diseño para tablet y móvil.
-- `assets/js/scripts.js`: navegación, formularios asíncronos y render de datos dinámicos.
-- `assets/data/galeria.json`: fuente de datos de la galería principal.
-- `assets/data/flota.json`: datos de la flota y de la empresa.
-- `assets/data/redes.json`: canales sociales y publicaciones destacadas.
-- `assets/data/testimonios.json`: opiniones aprobadas para publicar.
-- `assets/data/servicios-recientes.json`: galería simple de servicios recientes.
-- `assets/ImgGruas/`: carpeta donde viven las imágenes de la galería.
-- `assets/servicios-recientes/`: carpeta exclusiva para la galería reciente de redes.
-- `robots.txt` y `sitemap.xml`: archivos básicos de rastreo e indexación.
+## Vista General
 
-## Secciones implementadas
+![Flota M&C Grúas](assets/img/Flota_Gruas.png)
 
-### En la home
+La página está preparada para producción en `https://mycgruas.com/` y funciona como sitio estático con HTML, CSS, JavaScript y archivos JSON para administrar contenido sin tocar directamente el HTML.
 
-- `Inicio`
-- `Servicios`
-- `Cobertura`
-- `Guía útil`
-- `Galería`
-- `Contacto`
-- `Accesos a páginas complementarias`
+## Páginas
 
-### Páginas complementarias
+- `index.html`: página principal con servicios, rutas, guía útil, galería y contacto.
+- `flota.html`: flota, datos empresariales, NIT y respaldo operativo.
+- `redes.html`: perfiles sociales, TikTok oficial y galería de servicios recientes.
+- `experiencia.html`: formulario de satisfacción, privacidad y opiniones autorizadas.
 
-- `flota.html`: grúas visibles, datos de la empresa y estructura para mostrar el NIT.
-- `redes.html`: perfiles sociales, especialmente TikTok, Instagram y Facebook.
-- `experiencia.html`: formulario de satisfacción y espacio para testimonios moderados.
+## Funcionalidades
 
-## Cómo agregar nuevas imágenes a la galería
+- Llamadas rápidas por teléfono y WhatsApp.
+- Formularios con envío mediante Formspree.
+- Galería principal cargada desde JSON.
+- Galería de servicios recientes cargada desde JSON.
+- Flota y datos de empresa administrables desde JSON.
+- Redes sociales administrables desde JSON.
+- Opiniones publicadas con moderación manual.
+- Diseño responsive priorizado para móviles.
+- SEO base con `robots.txt`, `sitemap.xml`, metadatos y schema de negocio local.
 
-La galería principal ya no depende del HTML. Para agregar una imagen nueva:
+## Estructura Principal
 
-1. Copia la imagen dentro de `assets/ImgGruas/`.
-2. Abre `assets/data/galeria.json`.
-3. Agrega un nuevo objeto al arreglo con esta estructura:
-
-```json
-{
-  "src": "assets/ImgGruas/nueva-imagen.jpg",
-  "alt": "Descripción corta y clara de la imagen",
-  "titulo": "Título comercial de la imagen",
-  "descripcion": "Texto breve que explique el servicio o contexto",
-  "categoria": "Etiqueta corta"
-}
+```text
+MCgruas/
+├── index.html
+├── flota.html
+├── redes.html
+├── experiencia.html
+├── robots.txt
+├── sitemap.xml
+├── assets/
+│   ├── css/
+│   ├── js/
+│   ├── data/
+│   ├── img/
+│   ├── ImgGruas/
+│   └── servicios-recientes/
+└── docs/
 ```
 
-## Cómo administrar la flota
+## Documentación
 
-Edita `assets/data/flota.json`.
+- [Uso de la plataforma](docs/USO_PLATAFORMA.md)
+- [Gestión de contenido y JSON](docs/GESTION_CONTENIDO.md)
 
-- En `empresa` puedes actualizar:
-  - `nombre`
-  - `nit`
-  - `operacion`
-  - `cobertura`
-  - `correo`
-  - `telefonos`
-- En `vehiculos` puedes agregar nuevas grúas con imagen, descripción, uso y disponibilidad.
+## Archivos Dinámicos
 
-## Cómo administrar las redes
+- `assets/data/galeria.json`: galería principal.
+- `assets/data/servicios-recientes.json`: galería visual de redes.
+- `assets/data/flota.json`: datos de empresa y vehículos.
+- `assets/data/redes.json`: canales sociales y destacados.
+- `assets/data/testimonios.json`: opiniones autorizadas para publicar.
 
-Edita `assets/data/redes.json`.
+## Reglas Antes de Publicar
 
-- En `canales` agregas o actualizas los perfiles oficiales.
-- En `destacados` puedes publicar videos o posts destacados con miniatura, descripción y enlace.
-- Si todavía no tienes un enlace listo, puedes dejar el campo `url` vacío.
+- Verificar que los teléfonos y WhatsApp estén correctos.
+- Confirmar que `assets/data/flota.json` tenga el NIT oficial.
+- Revisar que las rutas visibles sigan siendo las rutas reales del negocio.
+- Validar que cada imagen agregada exista en la carpeta indicada.
+- Publicar solo testimonios reales y autorizados.
+- Probar la home y páginas internas desde celular.
 
-## Cómo administrar la galería de servicios recientes
+## Datos Actuales
 
-Esta galería vive en `redes.html` y fue pensada para ser muy fácil de mantener.
+- Empresa: `M&C Grúas`
+- NIT: `1.130.664.917`
+- Correo: `gruamcgruas@gmail.com`
+- Teléfonos: `317 713 7402` y `316 649 3568`
+- TikTok: `@mcgruas7`
 
-1. Sube o borra imágenes en `assets/servicios-recientes/`.
-2. Edita `assets/data/servicios-recientes.json`.
-3. Cada registro solo necesita:
+## Nota de Mantenimiento
 
-```json
-{
-  "numero": 6,
-  "nombre": "servicio-006.jpeg",
-  "fecha": "2026-04-17"
-}
-```
-
-El sistema construye solo la ruta final de la imagen con base en esa carpeta.
-
-## Cómo administrar opiniones publicadas
-
-La página `experiencia.html` recibe comentarios mediante formulario, pero la publicación pública se controla desde `assets/data/testimonios.json`.
-
-Ejemplo:
-
-```json
-{
-  "nombre": "Carlos M.",
-  "empresa": "Transportes XYZ",
-  "ciudad": "Cali",
-  "servicio": "Grúa urbana",
-  "calificacion": 5,
-  "comentario": "El servicio llegó rápido y el traslado fue muy seguro."
-}
-```
-
-## Recomendaciones rápidas
-
-- Usa nombres simples de archivo.
-- Optimiza imágenes antes de subirlas.
-- No inventes testimonios; publica solo opiniones reales y aprobadas.
-- Actualiza el `NIT` oficial en `assets/data/flota.json` antes de dejar esa página como definitiva.
-- Agrega el enlace real de TikTok en `assets/data/redes.json` cuando lo tengas.
-
-## Próximo paso pendiente
-
-- Actualizar el logo actual por el nuevo archivo que se agregará más adelante.
+El proyecto está diseñado para que una persona pueda actualizar imágenes, redes, flota y testimonios editando archivos JSON. Si se modifica la estructura de los JSON, también se debe revisar `assets/js/scripts.js`, porque allí se renderiza el contenido dinámico.
