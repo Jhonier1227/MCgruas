@@ -11,6 +11,8 @@
  * humana y nunca se renderiza en la pagina.
  */
 
+prepareHomeInitialScroll();
+
 document.addEventListener("DOMContentLoaded", () => {
   // Interacciones compartidas por todas las paginas.
   setupMobileNav();
@@ -27,6 +29,29 @@ document.addEventListener("DOMContentLoaded", () => {
   // Elementos pequenos que conviene mantener automaticos.
   updateCurrentYear();
 });
+
+// Evita que el navegador restaure una posicion antigua cuando se entra a la home.
+function prepareHomeInitialScroll() {
+  const isHomePage = /\/(?:index\.html)?$/.test(window.location.pathname);
+
+  if (!isHomePage || window.location.hash) {
+    return;
+  }
+
+  if ("scrollRestoration" in window.history) {
+    window.history.scrollRestoration = "manual";
+  }
+
+  const scrollTop = () => window.scrollTo(0, 0);
+
+  scrollTop();
+  window.addEventListener("load", scrollTop, { once: true });
+  window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+      scrollTop();
+    }
+  });
+}
 
 // Cierra el menu movil despues de tocar un enlace para mejorar la navegacion.
 function setupMobileNav() {
@@ -217,19 +242,20 @@ function renderGallery(items, elements) {
     syncActiveThumbnail(event.to, thumbnails);
   });
 
-  syncActiveThumbnail(0, thumbnails);
+  syncActiveThumbnail(0, thumbnails, { scroll: false });
 }
 
 // Resalta la miniatura correspondiente al slide visible.
-function syncActiveThumbnail(activeIndex, thumbnailsContainer) {
+function syncActiveThumbnail(activeIndex, thumbnailsContainer, options = {}) {
   const thumbs = thumbnailsContainer.querySelectorAll(".gallery-thumb");
+  const shouldScroll = options.scroll !== false;
 
   thumbs.forEach((thumb) => {
     const thumbIndex = Number(thumb.dataset.index);
     const isActive = thumbIndex === activeIndex;
     thumb.classList.toggle("is-active", isActive);
 
-    if (isActive) {
+    if (isActive && shouldScroll) {
       thumb.scrollIntoView({
         behavior: "smooth",
         inline: "center",
