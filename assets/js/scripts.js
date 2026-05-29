@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Interacciones compartidas por todas las paginas.
   setupMobileNav();
   setupAjaxForms();
+  setupContactActions();
 
   // Bloques cargados desde JSON. Cada loader se activa solo si encuentra
   // su contenedor en la pagina actual.
@@ -72,6 +73,47 @@ function setupMobileNav() {
       }
     });
   });
+}
+
+// Activa llamadas, correo y WhatsApp sin exponerlos como URLs rastreables.
+function setupContactActions() {
+  const actions = document.querySelectorAll("[data-contact-type][data-contact-value]");
+
+  actions.forEach((action) => {
+    action.addEventListener("click", () => {
+      const url = buildContactUrl(action);
+
+      if (!url) {
+        return;
+      }
+
+      if (action.dataset.contactTarget === "_blank") {
+        window.open(url, "_blank", "noopener,noreferrer");
+        return;
+      }
+
+      window.location.href = url;
+    });
+  });
+}
+
+function buildContactUrl(element) {
+  const { contactType, contactValue, contactMessage } = element.dataset;
+
+  if (contactType === "tel") {
+    return `tel:${contactValue}`;
+  }
+
+  if (contactType === "email") {
+    return `mailto:${contactValue}`;
+  }
+
+  if (contactType === "whatsapp") {
+    const message = contactMessage ? `?text=${encodeURIComponent(contactMessage)}` : "";
+    return `https://wa.me/${contactValue}${message}`;
+  }
+
+  return "";
 }
 
 // Convierte formularios marcados con data-async-form en formularios asincronos.

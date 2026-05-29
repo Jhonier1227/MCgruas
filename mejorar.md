@@ -8,6 +8,23 @@ Aplicar las recomendaciones reportadas por TrueRanker sin rediseñar la página,
 
 ## Cambios realizados
 
+### 0. Segunda optimizacion posterior al analisis de TrueRanker
+
+Despues de publicar la primera ronda, TrueRanker subio la efectividad de 78 a 95. Quedaron observaciones sobre legibilidad, URLs amigables y recursos de renderizado. Se aplicaron ajustes adicionales sin cambiar el diseno:
+
+- Los enlaces `tel:`, `mailto:` y `wa.me` dejaron de estar expuestos como enlaces rastreables en el HTML.
+- Las acciones de llamada, correo y WhatsApp se conservan mediante botones con datos semanticos y JavaScript.
+- Se actualizo CSS para que los botones mantengan el mismo aspecto que los enlaces anteriores.
+- Se cargan de forma diferida Google Fonts y Bootstrap Icons con `preload` y respaldo `noscript`.
+- Se simplificaron frases largas en la home para mejorar legibilidad.
+
+Validaciones de esta segunda ronda:
+
+- No quedan `href="tel:"`, `href="mailto:"` ni `href="https://wa.me"` en las paginas HTML.
+- `assets/js/scripts.js` pasa validacion de sintaxis con Node.js.
+- Las paginas principales y recursos criticos responden `200 OK` en servidor local.
+- Se mantiene Bootstrap CSS y los estilos propios como recursos criticos para evitar parpadeos visuales.
+
 ### 1. Meta descriptions
 
 Se ajustaron las meta descriptions para mantenerlas dentro del rango recomendado de 50 a 160 caracteres:
@@ -82,6 +99,13 @@ También se marcaron los scripts principales con `defer`:
 
 Esto ayuda a reducir bloqueo de renderizado por JavaScript sin cambiar el comportamiento visual.
 
+En la segunda ronda tambien se cargaron de forma diferida recursos no criticos:
+
+- Google Fonts.
+- Bootstrap Icons.
+
+Se mantuvieron Bootstrap CSS y los CSS propios como recursos normales porque son necesarios para evitar parpadeos visuales y mantener estable el diseno inicial.
+
 ### 7. Sitemap
 
 Se actualizó `sitemap.xml` con fecha `lastmod` del 2026-05-29 en las cuatro páginas públicas principales.
@@ -153,6 +177,9 @@ Se recomienda abrir las cuatro páginas en escritorio y celular después de publ
 - `flota.html`
 - `redes.html`
 - `experiencia.html`
+- `assets/css/style.css`
+- `assets/css/responsive.css`
+- `assets/js/scripts.js`
 - `sitemap.xml`
 - `llms.txt`
 - `mejorar.md`
