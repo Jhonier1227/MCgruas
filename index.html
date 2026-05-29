@@ -44,10 +44,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
-    rel="stylesheet"
+    rel="preload"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
   />
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </noscript>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link
+    rel="preload"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  </noscript>
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
   <script type="application/ld+json">
@@ -220,9 +236,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="section-tag">Atención 24/7</span>
             <h1>Grúas en Cali 24 horas con servicio en rutas a Bogotá y Pasto</h1>
             <p class="hero-lead">
-              Atención rápida para carros, motos, camionetas y maquinaria pesada o liviana. Prestamos servicio en Cali y en
-              recorridos Cali - Bogotá, Bogotá - Cali, Cali - Pasto y Pasto - Cali con enfoque en seguridad,
-              comunicación y respuesta oportuna.
+              Atención rápida para carros, motos, camionetas y maquinaria pesada o liviana. Cubrimos Cali y rutas hacia
+              Bogotá y Pasto con seguridad, comunicación clara y respuesta oportuna.
             </p>
 
             <div class="hero-badges" aria-label="Beneficios principales">
@@ -232,19 +247,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <div class="hero-actions">
-              <a href="tel:+573177137402" class="btn btn-warning btn-lg">
+              <button type="button" class="btn btn-warning btn-lg" data-contact-type="tel" data-contact-value="+573177137402">
                 <i class="bi bi-telephone-fill"></i>
                 Llamar ahora
-              </a>
-              <a
-                href="https://wa.me/573166493568?text=Hola%20M%26C%20Gr%C3%BAas,%20necesito%20ayuda%20con%20un%20servicio%20de%20gr%C3%BAa."
-                target="_blank"
-                rel="noopener noreferrer"
+              </button>
+              <button
+                type="button"
                 class="btn btn-success btn-lg"
+                data-contact-type="whatsapp"
+                data-contact-value="573166493568"
+                data-contact-message="Hola M&C Grúas, necesito ayuda con un servicio de grúa."
+                data-contact-target="_blank"
               >
                 <i class="bi bi-whatsapp"></i>
                 WhatsApp
-              </a>
+              </button>
               <a href="#contacto" class="btn btn-outline-light btn-lg">
                 Solicitar servicio
               </a>
@@ -298,8 +315,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="section-tag">Servicios principales</span>
           <h2>Soluciones de grúa pensadas para emergencias y traslados programados</h2>
           <p>
-            Organizamos servicios para conductores varados en Cali, recorridos entre Cali, Bogotá y Pasto,
-            además de necesidades especiales en carretera y traslados programados.
+            Atendemos conductores varados en Cali y coordinamos recorridos entre Cali, Bogotá y Pasto.
+            También apoyamos traslados programados y servicios especiales en carretera.
           </p>
         </div>
 
@@ -358,8 +375,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="section-tag">Cobertura principal</span>
             <h2>Rutas principales entre Cali, Bogotá y Pasto</h2>
             <p class="section-intro">
-              Nuestro servicio se concentra en estos recorridos principales para brindar una coordinación más clara,
-              tiempos de respuesta mejor organizados y mayor seguridad durante el traslado.
+              Trabajamos rutas principales para coordinar mejor cada traslado.
+              Esto ayuda a organizar tiempos, comunicación y seguridad durante el recorrido.
             </p>
 
             <div class="coverage-list">
@@ -387,7 +404,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span class="section-tag section-tag-dark">Cómo solicitar una grúa</span>
               <div class="process-step">
                 <strong>1. Escríbenos o llámanos</strong>
-                <p>Indica si estás en Cali, Bogotá, Pasto o en una de las rutas principales y cuéntanos qué pasó con el vehículo.</p>
+                <p>Indica dónde estás y cuéntanos qué pasó con el vehículo.</p>
               </div>
               <div class="process-step">
                 <strong>2. Comparte ubicación y fotos</strong>
@@ -395,7 +412,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
               <div class="process-step">
                 <strong>3. Confirma el destino</strong>
-                <p>Define si el traslado es a taller, parqueadero, vivienda, empresa o si necesitas uno de nuestros recorridos principales.</p>
+                <p>Confirma si el traslado va a un taller, parqueadero, vivienda, empresa u otra ciudad.</p>
               </div>
 
               <div class="process-note">
@@ -608,8 +625,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="section-tag">Contacto</span>
           <h2>Solicita tu servicio de grúa por llamada, WhatsApp o formulario</h2>
           <p>
-            Si es una urgencia, lo mejor es llamar o escribir por WhatsApp. El formulario queda como apoyo para
-            solicitudes con más detalle o traslados programados.
+            Si es una urgencia, llama o escribe por WhatsApp.
+            Usa el formulario para solicitudes con más detalle o traslados programados.
           </p>
         </div>
 
@@ -620,26 +637,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <p class="contact-lead">Servicio principal en Cali con rutas frecuentes hacia Bogotá y Pasto.</p>
 
               <div class="contact-list">
-                <a href="tel:+573177137402">
+                <button type="button" data-contact-type="tel" data-contact-value="+573177137402">
                   <i class="bi bi-telephone-fill"></i>
                   317 713 7402
-                </a>
-                <a href="tel:+573166493568">
+                </button>
+                <button type="button" data-contact-type="tel" data-contact-value="+573166493568">
                   <i class="bi bi-telephone-fill"></i>
                   316 649 3568
-                </a>
-                <a href="mailto:gruamcgruas@gmail.com">
+                </button>
+                <button type="button" data-contact-type="email" data-contact-value="gruamcgruas@gmail.com">
                   <i class="bi bi-envelope-fill"></i>
                   gruamcgruas@gmail.com
-                </a>
-                <a
-                  href="https://wa.me/573166493568?text=Hola%20M%26C%20Gr%C3%BAas,%20necesito%20apoyo%20con%20una%20gr%C3%BAa."
-                  target="_blank"
-                  rel="noopener noreferrer"
+                </button>
+                <button
+                  type="button"
+                  data-contact-type="whatsapp"
+                  data-contact-value="573166493568"
+                  data-contact-message="Hola M&C Grúas, necesito apoyo con una grúa."
+                  data-contact-target="_blank"
                 >
                   <i class="bi bi-whatsapp"></i>
                   Escribir por WhatsApp
-                </a>
+                </button>
                 <a
                   href="https://www.google.com/maps/search/?api=1&query=M%26C%20Gr%C3%BAas%20Cali"
                   target="_blank"
@@ -769,9 +788,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="col-sm-6 col-lg-4">
           <h3>Contacto rápido</h3>
           <ul class="footer-contact">
-            <li><a href="tel:+573177137402">317 713 7402</a></li>
-            <li><a href="tel:+573166493568">316 649 3568</a></li>
-            <li><a href="mailto:gruamcgruas@gmail.com">gruamcgruas@gmail.com</a></li>
+            <li><button type="button" data-contact-type="tel" data-contact-value="+573177137402">317 713 7402</button></li>
+            <li><button type="button" data-contact-type="tel" data-contact-value="+573166493568">316 649 3568</button></li>
+            <li><button type="button" data-contact-type="email" data-contact-value="gruamcgruas@gmail.com">gruamcgruas@gmail.com</button></li>
             <li><a href="https://mycgruas.com/">mycgruas.com</a></li>
             <li><a href="https://www.google.com/maps/search/?api=1&query=M%26C%20Gr%C3%BAas%20Cali" target="_blank" rel="noopener noreferrer">Google Maps</a></li>
           </ul>
@@ -787,19 +806,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- CTA flotante pensado para movil: llamar o escribir por WhatsApp -->
   <div class="floating-cta" aria-label="Acciones rápidas">
-    <a href="tel:+573177137402" class="floating-call">
+    <button type="button" class="floating-call" data-contact-type="tel" data-contact-value="+573177137402">
       <i class="bi bi-telephone-fill"></i>
       <span>Llamar</span>
-    </a>
-    <a
-      href="https://wa.me/573166493568?text=Hola%20M%26C%20Gr%C3%BAas,%20necesito%20una%20gr%C3%BAa."
+    </button>
+    <button
+      type="button"
       class="floating-whatsapp"
-      target="_blank"
-      rel="noopener noreferrer"
+      data-contact-type="whatsapp"
+      data-contact-value="573166493568"
+      data-contact-message="Hola M&C Grúas, necesito una grúa."
+      data-contact-target="_blank"
     >
       <i class="bi bi-whatsapp"></i>
       <span>WhatsApp</span>
-    </a>
+    </button>
   </div>
 
   <!-- Bootstrap aporta componentes visuales y scripts.js maneja la logica del sitio -->
