@@ -19,9 +19,9 @@ Checklist derivada de `PLAN_DE_MEJORAS.md`. Marcar `[x]` al completar cada tarea
 
 ## Lote 2 – Recursos bloqueantes y carga
 
-- [ ] 2.1 Añadir `rel="preload" as="style"` a `assets/css/style.css` y `assets/css/responsive.css` con patrón `onload` + `<noscript>` fallback.
-- [ ] 2.2 Mover script GTM de `<head>` a antes de `</body>` (mantener `<noscript>` iframe).
-- [ ] 2.3 Añadir `loading="lazy"` a imágenes hero directas sin él; `fetchpriority="high"` al LCP principal de index.
+- [x] 2.1 Añadir `rel="preload" as="style"` a `assets/css/style.css` y `assets/css/responsive.css` con patrón `onload` + `<noscript>` fallback (4 HTML).
+- [x] 2.2 Mover script GTM de `<head>` a antes de `</body>` (index, flota, redes; experiencia no tenía script en head).
+- [x] 2.3 Añadir `loading="lazy"` a hero de flota, redes, experiencia; `fetchpriority="high"` a principalGrua de index.
 - [ ] 2.4 Verificar que no hay parpadeo visual (FOUC) y estilos aplicados correctamente.
 - [ ] 2.5 Verificar GTM en modo preview.
 - [ ] 2.6 Ejecutar Lighthouse: oportunidades "Eliminar recursos que bloquean el renderizado".
