@@ -658,6 +658,18 @@ function updateCurrentYear() {
   });
 }
 
+// Oculta el loader inicial una vez terminada la carga de la página.
+function ocultarPageLoader() {
+  const loader = document.getElementById("pageLoader");
+
+  if (loader) {
+    loader.classList.add("oculto");
+    loader.addEventListener("transitionend", () => loader.remove(), { once: true });
+  }
+}
+
+window.addEventListener("load", ocultarPageLoader);
+
 // Queda lista para reutilizarse si en el futuro se vuelve a mostrar fecha.
 function formatDate(value) {
   const parsedDate = new Date(`${value}T00:00:00`);
