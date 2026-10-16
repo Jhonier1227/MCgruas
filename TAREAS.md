@@ -42,7 +42,7 @@ Checklist derivada de `PLAN_DE_MEJORAS.md`. Marcar `[x]` al completar cada tarea
 
 ## Lote 5 – Accesibilidad mínima y contenido
 
-- [ ] 5.1 Reescribir párrafo de `#guia` en `index.html` eliminando referencia a "posicionar mejor la página" y enfocándolo al cliente.
+- [x] 5.1 Reescribir párrafo de `#guia` en `index.html` eliminando referencia a "posicionar mejor la página" y enfocándolo al cliente.
 - [ ] 5.2 (Opcional, si se aprueba) Añadir enlace "Saltar al contenido" en `<body>` de las 4 páginas.
 - [ ] 5.3 Navegar con teclado (Tab) y confirmar foco visible y orden lógico.
 - [ ] 5.4 Leer texto reescrito y confirmar utilidad para el cliente.
