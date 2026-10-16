@@ -94,6 +94,11 @@
       ]
     }
   </script>
+  <style>
+    #pageLoader{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:#0b1220;transition:opacity .4s ease,visibility .4s ease}
+    #pageLoader .spinner{width:48px;height:48px;border:4px solid rgba(245,178,25,0.25);border-top-color:#f5b219;border-radius:50%;animation:girar .8s linear infinite}
+    @keyframes girar{to{transform:rotate(360deg)}}
+  </style>
   <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript><link rel="stylesheet" href="assets/css/style.css" /></noscript>
   <link rel="preload" href="assets/css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
