@@ -25,7 +25,7 @@ Checklist derivada de `PLAN_DE_MEJORAS.md`. Marcar `[x]` al completar cada tarea
 - [ ] 2.4 Verificar que no hay parpadeo visual (FOUC) y estilos aplicados correctamente.
 - [ ] 2.5 Verificar GTM en modo preview.
 - [ ] 2.6 Ejecutar Lighthouse: oportunidades "Eliminar recursos que bloquean el renderizado".
-- [x] 2.7 Agregar loader inicial (`#pageLoader` + spinner CSS) para evitar FOUC al cargar el CSS diferido; se oculta en `window.load` (4 HTML, style.css, scripts.js).
+- [x] 2.7 Agregar loader inicial (`#pageLoader` + spinner CSS) para evitar FOUC al cargar el CSS diferido; se oculta en `window.load` con fallback de `setTimeout` (3s) y remoción forzada (1s) para evitar que quede bloqueado en producción (4 HTML, style.css, scripts.js).
 
 ## Lote 3 – Caché y compresión
 
