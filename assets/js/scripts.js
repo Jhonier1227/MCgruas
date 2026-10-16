@@ -664,11 +664,34 @@ function ocultarPageLoader() {
 
   if (loader) {
     loader.classList.add("oculto");
-    loader.addEventListener("transitionend", () => loader.remove(), { once: true });
+    loader.style.pointerEvents = "none";
+    loader.addEventListener(
+      "transitionend",
+      () => {
+        try {
+          loader.remove();
+        } catch (e) {
+          // ignore
+        }
+      },
+      { once: true }
+    );
+    // Fallback: forzar remoción si la transición no se dispara.
+    setTimeout(() => {
+      try {
+        loader.remove();
+      } catch (e) {
+        // ignore
+      }
+    }, 1000);
   }
 }
 
+// Ejecutar al cargar la ventana.
 window.addEventListener("load", ocultarPageLoader);
+
+// Fallback de seguridad: forzar ocultación tras 3 segundos si window.load no disparó.
+setTimeout(ocultarPageLoader, 3000);
 
 // Queda lista para reutilizarse si en el futuro se vuelve a mostrar fecha.
 function formatDate(value) {
