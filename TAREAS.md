@@ -34,10 +34,10 @@ Checklist derivada de `PLAN_DE_MEJORAS.md`. Marcar `[x]` al completar cada tarea
 
 ## Lote 4 – SEO técnico: Open Graph, Twitter y JSON-LD internas
 
-- [ ] 4.1 Agregar etiquetas `og:*` y `twitter:*` a `flota.html`, `redes.html`, `experiencia.html`.
-- [ ] 4.2 Agregar JSON-LD `LocalBusiness`/`WebPage` a las 3 páginas internas.
-- [ ] 4.3 Validar JSON-LD con validador de schema.org.
-- [ ] 4.4 Confirmar `og:url` apunta a la URL propia de cada página.
+- [x] 4.1 Agregar etiquetas `og:*` y `twitter:*` a `flota.html`, `redes.html`, `experiencia.html`.
+- [x] 4.2 Agregar JSON-LD `LocalBusiness` a las 3 páginas internas.
+- [x] 4.3 Validar JSON-LD con Python (json.loads): 4 bloques OK (index LocalBusiness+FAQPage, internas LocalBusiness).
+- [x] 4.4 Confirmar `og:url` apunta a la URL propia de cada página (/, /flota.html, /redes.html, /experiencia.html).
 - [ ] 4.5 Ejecutar Lighthouse SEO / validador Open Graph.
 
 ## Lote 5 – Accesibilidad mínima y contenido
