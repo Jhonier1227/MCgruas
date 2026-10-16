@@ -28,7 +28,7 @@ Checklist derivada de `PLAN_DE_MEJORAS.md`. Marcar `[x]` al completar cada tarea
 
 ## Lote 3 – Caché y compresión
 
-- [ ] 3.1 Crear `.htaccess` con DEFLATE, ExpiresByType y FileETag (o documentar pasos del panel de Hostinger si no aplica).
+- [x] 3.1 Crear `.htaccess` con DEFLATE, ExpiresByType y FileETag para Apache (Hostinger).
 - [ ] 3.2 Verificar cabeceras `content-encoding` y `cache-control` en respuestas de páginas y assets.
 - [ ] 3.3 Ejecutar `git diff --check` y verificar que las 4 páginas responden `200 OK`.
 
