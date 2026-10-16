@@ -16,7 +16,7 @@
     {
       "nombre": "Plataforma para servicios urbanos",
       "tipo": "Grúa planchón",
-      "imagen": "assets/img/GruaFondo.jpeg",
+      "imagen": "assets/img/GruaFondo.webp",
       "alt": "Grúa de plataforma trasladando una camioneta",
       "descripcion": "Unidad ideal para servicios urbanos, atención a vehículos averiados y traslados coordinados desde Cali.",
       "uso": "Carros, camionetas y remolques livianos",
@@ -26,7 +26,7 @@
     {
       "nombre": "Unidad para maquinaria pesada o liviana",
       "tipo": "Transporte especializado",
-      "imagen": "assets/img/GruaFondo2.jpeg",
+      "imagen": "assets/img/GruaFondo2.webp",
       "alt": "Grúa transportando maquinaria agrícola",
       "descripcion": "Preparada para traslados donde se requiere una plataforma estable y una coordinación más cuidadosa de la carga.",
       "uso": "Maquinaria pesada o liviana, equipos y traslados especiales",
@@ -36,7 +36,7 @@
     {
       "nombre": "Atención en carretera",
       "tipo": "Rutas principales",
-      "imagen": "assets/img/principalGrua.jpeg",
+      "imagen": "assets/img/principalGrua.webp",
       "alt": "Camiones de grúa listos para servicio en carretera",
       "descripcion": "Pensada para respaldar servicios en carretera y solicitudes que requieren coordinación entre Cali, Bogotá y Pasto.",
       "uso": "Asistencia vial y traslados entre ciudades",
@@ -46,7 +46,7 @@
     {
       "nombre": "Servicio de carga segura",
       "tipo": "Operación técnica",
-      "imagen": "assets/ImgGruas/Grua (29).jpeg",
+      "imagen": "assets/ImgGruas/Grua (29).webp",
       "alt": "Vehículo trasladado en una grúa de plataforma",
       "descripcion": "Unidad preparada para respaldar servicios de traslado seguro y dar confianza a clientes nuevos y frecuentes.",
       "uso": "Vehículos inmovilizados o traslados preventivos",

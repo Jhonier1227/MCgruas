@@ -4,16 +4,16 @@ Checklist derivada de `PLAN_DE_MEJORAS.md`. Marcar `[x]` al completar cada tarea
 
 ## Lote 1 – Imágenes: optimizar peso y formato
 
-- [ ] 1.1 Crear carpeta de respaldo `assets/img/_backup_originales/` y copiar todas las imágenes originales antes de optimizar.
-- [ ] 1.2 Convertir `Experiencia_Gruas.png` a WebP (calidad 82-85), conservar PNG original.
-- [ ] 1.3 Convertir `Flota_Gruas.png` a WebP, conservar PNG original.
-- [ ] 1.4 Convertir `Redes_MCgruas.png` a WebP, conservar PNG original.
-- [ ] 1.5 Redimensionar `Logo_Nuevo_mcgrua.png` a máx. 512x512 y generar WebP, conservar original 1024x1024.
-- [ ] 1.6 Convertir JPEG héroes (`principalGrua.jpeg`, `GruaFondo.jpeg`, `GruaFondo2.jpeg`) a WebP, conservar originales.
-- [ ] 1.7 Convertir galería `assets/ImgGruas/Grua (1)..(31).jpeg` a WebP, conservar originales.
-- [ ] 1.8 Convertir `assets/servicios-recientes/*.jpeg` a WebP, conservar originales.
-- [ ] 1.9 Revisar uso de `LogoGrua1.png`; si no se usa, proponer eliminación (no eliminar sin aprobación).
-- [ ] 1.10 Actualizar referencias en HTML/CSS/JSON a los archivos `.webp` correspondientes.
+- [x] 1.1 Crear carpeta de respaldo `assets/_backup_originales/` y copiar todas las imágenes originales antes de optimizar.
+- [x] 1.2 Convertir `Experiencia_Gruas.png` a WebP (calidad 85), conservar PNG original.
+- [x] 1.3 Convertir `Flota_Gruas.png` a WebP, conservar PNG original.
+- [x] 1.4 Convertir `Redes_MCgruas.png` a WebP, conservar PNG original.
+- [x] 1.5 Redimensionar `Logo_Nuevo_mcgrua.png` a 512x512 y generar WebP + PNG 512, conservar original 1024x1024.
+- [x] 1.6 Convertir JPEG héroes (`principalGrua.jpeg`, `GruaFondo.jpeg`, `GruaFondo2.jpeg`) a WebP, conservar originales.
+- [x] 1.7 Convertir galería `assets/ImgGruas/Grua (1)..(31).jpeg` a WebP (31 archivos), conservar originales.
+- [x] 1.8 Convertir `assets/servicios-recientes/*.jpeg` a WebP (13 archivos), conservar originales.
+- [x] 1.9 Revisar uso de `LogoGrua1.png`: no se usa en HTML/CSS/JS/JSON (solo en docs de planificación). Propuesta de eliminación deja para Lote 6 (sin eliminar sin aprobación).
+- [x] 1.10 Actualizar referencias en HTML/CSS/JSON a los archivos `.webp` correspondientes.
 - [ ] 1.11 Verificar que todas las imágenes cargan con mismo recorte y apariencia en las 4 páginas.
 - [ ] 1.12 Ejecutar Lighthouse móvil y escritorio, comparar con línea base (móvil 67, escritorio 89).
 
